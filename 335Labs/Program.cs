@@ -8,6 +8,7 @@ namespace _335Labs
         {
             string a = Console.ReadLine();
             Console.WriteLine(a);
+            Console.WriteLine("Hi, man");
         }
     }
 }
