@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vadim.Nacharov\\Documents\\335Labs\\335Labs\\335Labs.csproj": {}
+    "C:\\Users\\351805\\Documents\\335_20\\335Labs\\335Labs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vadim.Nacharov\\Documents\\335Labs\\335Labs\\335Labs.csproj": {
+    "C:\\Users\\351805\\Documents\\335_20\\335Labs\\335Labs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vadim.Nacharov\\Documents\\335Labs\\335Labs\\335Labs.csproj",
+        "projectUniqueName": "C:\\Users\\351805\\Documents\\335_20\\335Labs\\335Labs.csproj",
         "projectName": "335Labs",
-        "projectPath": "C:\\Users\\Vadim.Nacharov\\Documents\\335Labs\\335Labs\\335Labs.csproj",
-        "packagesPath": "C:\\Users\\Vadim.Nacharov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vadim.Nacharov\\Documents\\335Labs\\335Labs\\obj\\",
+        "projectPath": "C:\\Users\\351805\\Documents\\335_20\\335Labs\\335Labs.csproj",
+        "packagesPath": "C:\\Users\\351805\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\351805\\Documents\\335_20\\335Labs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Vadim.Nacharov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\351805\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -56,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
