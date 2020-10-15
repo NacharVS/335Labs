@@ -12,8 +12,4 @@
     <None Remove="Khabibrakhmanov\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Gilmutdinov\" />
-  </ItemGroup>
-
 </Project>
