@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _335Labs.Faizrakhmanov
 {
-    class student_lists
+    class student_list
     {
 
     }
