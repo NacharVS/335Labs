@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _335Labs.Bakhmutova
+namespace _335Labs
 {
     class MathMetods
     {
