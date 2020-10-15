@@ -6,5 +6,10 @@ namespace _335Labs.Nacharov
 {
     class ArrayGeneration
     {
+        static void Test1()
+        {
+            Console.WriteLine();
+        }
+
     }
 }
