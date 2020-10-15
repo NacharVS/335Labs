@@ -53,3 +53,21 @@ Thumbs.db
 *.mov
 *.wmv
 
+335Labs/obj/project.nuget.cache
+335Labs/obj/project.assets.json
+335Labs/obj/Debug/netcoreapp3.1/335Labs.pdb
+335Labs/obj/Debug/netcoreapp3.1/335Labs.exe
+335Labs/obj/Debug/netcoreapp3.1/335Labs.dll
+335Labs/obj/Debug/netcoreapp3.1/335Labs.csprojAssemblyReference.cache
+335Labs/obj/Debug/netcoreapp3.1/335Labs.csproj.FileListAbsolute.txt
+335Labs/obj/Debug/netcoreapp3.1/335Labs.csproj.CoreCompileInputs.cache
+335Labs/obj/Debug/netcoreapp3.1/335Labs.assets.cache
+335Labs/obj/335Labs.csproj.nuget.g.props
+335Labs/obj/335Labs.csproj.nuget.dgspec.json
+335Labs/bin/Debug/netcoreapp3.1/335Labs.runtimeconfig.dev.json
+335Labs/obj/Debug/netcoreapp3.1/335Labs.exe
+*.exe
+335Labs/bin/Debug/netcoreapp3.1/335Labs.pdb
+335Labs/bin/Debug/netcoreapp3.1/335Labs.exe
+335Labs/bin/Debug/netcoreapp3.1/335Labs.dll
+.vs/335Labs/v16/.suo
