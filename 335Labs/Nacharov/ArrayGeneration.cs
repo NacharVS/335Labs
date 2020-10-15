@@ -9,6 +9,7 @@ namespace _335Labs.Nacharov
         static void Test1()
         {
             Console.WriteLine();
+            Console.WriteLine();
         }
 
     }
