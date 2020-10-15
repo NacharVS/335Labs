@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Khabibrakhmanov\" />
+    <Compile Remove="Khabibrakhmanov\**" />
+    <EmbeddedResource Remove="Khabibrakhmanov\**" />
+    <None Remove="Khabibrakhmanov\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Gilmutdinov\" />
   </ItemGroup>
 
