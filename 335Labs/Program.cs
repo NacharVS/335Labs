@@ -6,8 +6,14 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
-           
+            division(1, 5, 10);
+        }
+        static void division(double a, int b, int c)
+        {
+            for (int i = b; i < c; i++) ;
+            {
+                
+            }
         }
     }
 }
