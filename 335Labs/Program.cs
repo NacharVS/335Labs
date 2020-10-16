@@ -8,7 +8,7 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            MathMethods1.Discriminant(); 
+            MathMethods1.CirculFerence(); 
         }
     }
 }
