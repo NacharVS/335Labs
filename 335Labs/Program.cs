@@ -10,7 +10,7 @@ namespace _335Labs
             Console.WriteLine("Введите радиус круга: ");
             double r = double.Parse(Console.ReadLine());
 
-            double res = Kirillov.Area_of_a_circle1.Area_of_a_circle(r);
+            double res = Kirillov.class_1.Area_of_a_circle(r);
             Console.WriteLine($"S круга равна: ");
             Console.WriteLine(res);
             Console.WriteLine(" ");
@@ -19,7 +19,7 @@ namespace _335Labs
             Console.WriteLine("Введите радиус круга: ");
             double r2 = double.Parse(Console.ReadLine());
 
-            double res2 = Kirillov.Circum_ference1.Circum_ference(r);
+            double res2 = Kirillov.class_1.Circum_ference(r);
             Console.WriteLine($"Периметр круга: ");
             Console.WriteLine(res);
         }
