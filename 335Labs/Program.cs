@@ -8,7 +8,7 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            MathMethods.Pythagore(); 
+            MathMethods1.Discriminant(); 
         }
     }
 }
