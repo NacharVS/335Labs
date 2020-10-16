@@ -18,5 +18,10 @@ namespace _335Labs.Kirillov
             return 2 * pi * r2;
 
         }
+        static public double Par_Volume(double sqrmain, double h)
+        {
+            return sqrmain * h;
+
+        }
     }
 }
