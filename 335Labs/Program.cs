@@ -6,7 +6,7 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Nikita");
+            Console.WriteLine("Hello");
            
         }
     }
