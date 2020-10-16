@@ -1,4 +1,5 @@
 ﻿using _335Labs;
+using _335Labs.Shagaviev_Barygin;
 using System;
 
 namespace _335Labs
@@ -7,7 +8,7 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            
+            MathMethods.Pythagore(); 
         }
     }
 }

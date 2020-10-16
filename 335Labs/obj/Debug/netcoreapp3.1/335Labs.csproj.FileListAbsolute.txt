@@ -21,3 +21,9 @@ C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.Assembly
 C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfo.cs
 C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.dll
 C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.pdb
+C:\Users\351803\Desktop\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.exe
+C:\Users\351803\Desktop\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.deps.json
+C:\Users\351803\Desktop\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.runtimeconfig.json
+C:\Users\351803\Desktop\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.runtimeconfig.dev.json
+C:\Users\351803\Desktop\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.dll
+C:\Users\351803\Desktop\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.pdb

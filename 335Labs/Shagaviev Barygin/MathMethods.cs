@@ -5,7 +5,7 @@ namespace _335Labs.Shagaviev_Barygin
 {
     class MathMethods
     {
-        static void Main(string[] args)
+        public static void Pythagore()
         {
             Console.WriteLine("введите число N");
             string st = Console.ReadLine();
