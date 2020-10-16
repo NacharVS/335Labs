@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\351803\\Desktop\\Local Directory\\335Labs\\335Labs.csproj",
+      "projectUniqueName": "C:\\Users\\351803\\Desktop\\335Labs\\335Labs\\335Labs.csproj",
       "projectName": "335Labs",
-      "projectPath": "C:\\Users\\351803\\Desktop\\Local Directory\\335Labs\\335Labs.csproj",
+      "projectPath": "C:\\Users\\351803\\Desktop\\335Labs\\335Labs\\335Labs.csproj",
       "packagesPath": "C:\\Users\\351803\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\351803\\Desktop\\Local Directory\\335Labs\\obj\\",
+      "outputPath": "C:\\Users\\351803\\Desktop\\335Labs\\335Labs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

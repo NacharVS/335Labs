@@ -16,3 +16,8 @@ C:\Users\351803\Desktop\Local Directory\335Labs\obj\Debug\netcoreapp3.1\335Labs.
 C:\Users\351803\Desktop\Local Directory\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfo.cs
 C:\Users\351803\Desktop\Local Directory\335Labs\obj\Debug\netcoreapp3.1\335Labs.dll
 C:\Users\351803\Desktop\Local Directory\335Labs\obj\Debug\netcoreapp3.1\335Labs.pdb
+C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.csprojAssemblyReference.cache
+C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfoInputs.cache
+C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfo.cs
+C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.dll
+C:\Users\351803\Desktop\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.pdb
