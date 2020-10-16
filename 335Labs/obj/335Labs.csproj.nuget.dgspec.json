@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\яПроги\\335Labs\\335Labs.csproj": {}
+    "C:\\Users\\351808\\Documents\\335Labs\\335Labs\\335Labs.csproj": {}
   },
   "projects": {
-    "E:\\яПроги\\335Labs\\335Labs.csproj": {
+    "C:\\Users\\351808\\Documents\\335Labs\\335Labs\\335Labs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\яПроги\\335Labs\\335Labs.csproj",
+        "projectUniqueName": "C:\\Users\\351808\\Documents\\335Labs\\335Labs\\335Labs.csproj",
         "projectName": "335Labs",
-        "projectPath": "E:\\яПроги\\335Labs\\335Labs.csproj",
-        "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
-        "outputPath": "E:\\яПроги\\335Labs\\obj\\",
+        "projectPath": "C:\\Users\\351808\\Documents\\335Labs\\335Labs\\335Labs.csproj",
+        "packagesPath": "C:\\Users\\351808\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\351808\\Documents\\335Labs\\335Labs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\351808\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -52,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
