@@ -9,23 +9,24 @@ namespace _335Labs.Shagaviev_Barygin
         public static void Discriminant()
         {
 
+            double a, b, c, d;
             Console.Write("Введите значение a = ");
-            float a = float.Parse(Console.ReadLine().Trim());
+            a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Введите значение b = ");
-            float b = float.Parse(Console.ReadLine().Trim());
+            b = Convert.ToDouble(Console.ReadLine());
             Console.Write("Введите значение c = ");
-            float c = float.Parse(Console.ReadLine().Trim());
+            c = Convert.ToDouble(Console.ReadLine());
 
-            float d = b * b - 4 * a * c;
+            d = b * b - 4 * a * c;
 
             if (d < 0)
             {
-                Console.Write("Дискриминант d < 0. Решение квадратного уравнения невозможно.");
+                Console.Write("Дискриминант d < 0<. Решение квадратного уравнения невозможно.");
             }
             else
             {
 
-                float x1, x2;
+                double x1, x2;
 
                 if (d == 0)
                 {
