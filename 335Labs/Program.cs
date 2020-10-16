@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _335Labs.Gilmutdinov;
+using System;
 
 namespace _335Labs
 {
@@ -6,9 +7,9 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            string a = Console.ReadLine();
-            Console.WriteLine(a);
-            Console.WriteLine("Hi, man");
+            Console.WriteLine(Methotds.Sum(-5,5,10));
+            Console.WriteLine(Methotds.Disc(2,10,-4));
         }
     }
 }
+

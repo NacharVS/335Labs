@@ -4,26 +4,39 @@ using System.Text;
 
 namespace _335Labs.Gilmutdinov
 {
-    class _111
+    class Methotds
     {
-        public static void Main()
-        {
-            int a = -5; 
-            int b = 5;
-            int c = 10;
+        public static int Sum(int a, int b, int c)
 
-        }
-        
-    }
-    static void Sum(int a, int b, int c)
-
-    {
-        int res;
-        for (int i = a; i <= b; i++)
         {
-            res = c / a;
-            Console.WriteLine(res);
+            int res = 0;
+            for (int i = a; i <= b; i++)
+            {
+                if (i == 0)
+                {
+                    continue;
+                }
+                res = c / i;
+                Console.WriteLine(res);
+            }
+            return res;
         }
-       
+        public static (double, double) Disc(double a, double b, double c)
+        { 
+            double D = b * b - 4 * a * c;
+          
+            if (D>=0)
+            {
+             double x1 = (-b + Math.Sqrt(D)) / (2 * a);
+             double x2 = (-b - Math.Sqrt(D)) / (2 * a);
+                return (x1, x2);
+            }
+            else
+            {
+                Console.WriteLine("Нет корней");
+            }
+            return (1,1); 
+        }
     }
 }
+
