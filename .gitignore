@@ -1,13 +1,7 @@
 .vs
 
-HealthControlling/bin
-HealthControlling/obj
-
-HealthControlling.Implementation/bin
-HealthControlling.Implementation/obj
-
-HealthControlling.Tests/bin
-HealthControlling.Tests/obj
+335Labs/bin
+335Labs/obj
 
 
 # These are some examples of commonly ignored file patterns.
