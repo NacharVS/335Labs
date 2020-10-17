@@ -54,18 +54,46 @@ namespace _335Labs.Zagaynova
             double result = 3.14 * r * r;
             return result;
         }
+        public static int ParallV(int a, int b, int c)
+        {
+            int result = a * b * c;
+            return result;
+        }
 
+        public static void Fisika()
+        {
+            Console.WriteLine("What to find");
+            Console.WriteLine("1-Voltage");
+            Console.WriteLine("2-Amperage");
+            Console.WriteLine("3-Resistance");
+            int otvet = int.Parse(Console.ReadLine());
+            if (otvet == 1)
 
+            {
+                Console.WriteLine("Enter Amperage and Resistance");
+                double A = double.Parse(Console.ReadLine());
+                double R = double.Parse(Console.ReadLine());
+                double result = A * R;
+                Console.WriteLine($"Voltage={result}");
+            }
+            if (otvet == 2)
 
-
-
-
-
-
-
-
-
-
+            {
+                Console.WriteLine("Enter Voltage and Resistance");
+                double V = double.Parse(Console.ReadLine());
+                double R = double.Parse(Console.ReadLine());
+                double result = V / R;
+                Console.WriteLine($"Amperage={result}");
+            }
+            if (otvet == 3)
+            {
+                Console.WriteLine("Enter Voltage and Amperage");
+                double V = double.Parse(Console.ReadLine());
+                double A = double.Parse(Console.ReadLine());
+                double result = V / A;
+                Console.WriteLine($"Amperage={result}");
+            }
+        }
     }
 }
 
