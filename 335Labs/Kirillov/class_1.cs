@@ -23,5 +23,27 @@ namespace _335Labs.Kirillov
             return sqrmain * h;
 
         }
+
+        static public double Square_function(double a, double x, double b, double c)
+        {
+            double y = a * x * x + b * x + c;
+            if (a == 0)
+            {
+                Console.WriteLine("Коэффициэнт 'a' не должен равняться 0!");
+                return 0;
+            }
+            else
+            {
+                return y;
+            }
+              
+        }
+
+        static public double Pifagor_T(double a, double b)
+        {
+            return Math.Sqrt(a * a + b * b);
+        }
+
+
     }
 }
