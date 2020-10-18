@@ -71,17 +71,28 @@ namespace _335Labs.Sadriev
         }
         public static double AVR(double a, double b)
         {
-
-
-
-
-            return 0;
+            double i = a / b;
+            return i;
         
         
         }
+        public static double RVA(double a, double b)
+        {
+            double r = a / b;
+            return r;
+        }
+        public static double VRA(double a, double b)
+        {
+            double v=a*b;
+            return v;
+        }
 
-        
-            
+
+
+
+
+
+
 
 
 
