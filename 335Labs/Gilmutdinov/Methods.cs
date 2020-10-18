@@ -52,11 +52,11 @@ namespace _335Labs.Gilmutdinov
             return 0;
         }
 
-        public static double Circircumference(double a)
+        public static double Circircumference(double r)
         {
-            if (a > 0)
+            if (r > 0)
             {
-                double C = 2 * 3.14 * a;
+                double C = 2 * 3.14 * r;
                 Console.WriteLine($"Длина окружности = {C}");
             }
             else
@@ -66,11 +66,11 @@ namespace _335Labs.Gilmutdinov
             return 0;
         }
 
-        public static double AreaCir(double a)
+        public static double AreaCir(double r)
         {
-            if (a > 0)
+            if (r > 0)
             {
-                double S = 3.14 * a * a;
+                double S = 3.14 * r * r;
                 Console.WriteLine($"Площадь окружности = {S}");
             }
             else
@@ -94,6 +94,28 @@ namespace _335Labs.Gilmutdinov
             }
             return 0;
         }
+
+        public static int Amperage(int U, int R)
+        {
+            int I = U / R;
+            Console.WriteLine($"I = {I}");
+            return 0;
+        }
+
+        public static int Voltage(int I, int R)
+        {
+            int U = I * R;
+            Console.WriteLine($"U = {U}");
+            return 0;
+        }
+
+        public static int Resistance(int I, int U)
+        {
+            int R = U / I;
+            Console.WriteLine($"R = {R}");
+            return 0;
+        }
+
     }
 }
 

@@ -13,6 +13,10 @@ namespace _335Labs
             Console.WriteLine(Methotds.Circircumference(2));
             Console.WriteLine(Methotds.AreaCir(2));
             Console.WriteLine(Methotds.Volume(5, 5, 10));
+            Console.WriteLine(Methotds.Amperage(10, 5));
+            Console.WriteLine(Methotds.Voltage(2, 5));
+            Console.WriteLine(Methotds.Resistance(2, 10));
+
         }
     }
 }
