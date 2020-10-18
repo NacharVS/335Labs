@@ -28,3 +28,16 @@ C:\Users\351808\Documents\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.runtim
 C:\Users\351808\Documents\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.runtimeconfig.dev.json
 C:\Users\351808\Documents\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.dll
 C:\Users\351808\Documents\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.pdb
+E:\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.exe
+E:\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.deps.json
+E:\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.runtimeconfig.json
+E:\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.runtimeconfig.dev.json
+E:\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.dll
+E:\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.pdb
+E:\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.csprojAssemblyReference.cache
+E:\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfoInputs.cache
+E:\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfo.cs
+E:\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.csproj.CoreCompileInputs.cache
+E:\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.dll
+E:\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.pdb
+E:\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.genruntimeconfig.cache

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
 namespace _335Labs.Gilmutdinov
@@ -36,6 +37,62 @@ namespace _335Labs.Gilmutdinov
                 Console.WriteLine("Нет корней");
             }
             return (1,1); 
+        }
+        public static double Pif(double a, double b)
+        {
+            if (a > 0 & b >0)
+            {
+                double c = Math.Sqrt(a * a + b * b);
+                Console.WriteLine(c);    
+            }
+            else
+            {
+                Console.WriteLine("отрезки не могут быть отрицательными!");
+            }
+            return 0;
+        }
+
+        public static double Circircumference(double a)
+        {
+            if (a > 0)
+            {
+                double C = 2 * 3.14 * a;
+                Console.WriteLine($"Длина окружности = {C}");
+            }
+            else
+            {
+                Console.WriteLine("отрезки не могут быть отрицательными!");
+            }
+            return 0;
+        }
+
+        public static double AreaCir(double a)
+        {
+            if (a > 0)
+            {
+                double S = 3.14 * a * a;
+                Console.WriteLine($"Площадь окружности = {S}");
+            }
+            else
+            {
+                Console.WriteLine("отрезки не могут быть отрицательными!");
+            }
+            return 0;
+
+        }
+
+        public static int Volume(int a, int b, int c)
+        {
+            if (a > 0 & b > 0 & c > 0)
+            {
+                int V = a * b * c;
+                Console.WriteLine($"Объем параллелепипеда = {V}");
+            }
+            else
+            {
+                Console.WriteLine("отрезки не могут быть отрицательными!");
+            }
+            return 0;
         }
     }
 }
