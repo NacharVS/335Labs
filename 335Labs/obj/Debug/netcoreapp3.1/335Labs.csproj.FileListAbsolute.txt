@@ -22,3 +22,16 @@ C:\Users\351805\Documents\335_20\335Labs\obj\Debug\netcoreapp3.1\335Labs.Assembl
 C:\Users\351805\Documents\335_20\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfo.cs
 C:\Users\351805\Documents\335_20\335Labs\obj\Debug\netcoreapp3.1\335Labs.dll
 C:\Users\351805\Documents\335_20\335Labs\obj\Debug\netcoreapp3.1\335Labs.pdb
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.csprojAssemblyReference.cache
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfoInputs.cache
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.AssemblyInfo.cs
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.csproj.CoreCompileInputs.cache
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.dll
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.pdb
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.exe
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.deps.json
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.runtimeconfig.json
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.runtimeconfig.dev.json
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.dll
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\bin\Debug\netcoreapp3.1\335Labs.pdb
+D:\Ainiya\smartgit-win-20_1_5\335Labs\335Labs\obj\Debug\netcoreapp3.1\335Labs.genruntimeconfig.cache

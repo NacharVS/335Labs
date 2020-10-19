@@ -1,45 +1,63 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace _335Labs
+namespace _335Labs.Girfanova
 {
-    class StringMetods
+    public static class StringMetodsGirf
     {
-        public string RemoveSame(string s)
+        public static bool Palindrome(string str)
         {
-     //       int num;
-     //       string pr = "_";
-     //       foreach (char ch in s) 
-      //      {
-     //           foreach (char chh in s)
-     //           {
-      //              if ( && ch = ch) 
-      //              {
-      //
-      //              }
-      //          }
-     //       }
-       //     string z,c;
-      //      string m = " ";
-       //     string[] d = s.Split();
-       //     Console.WriteLine("{0}", string.Join(" ", d.Where(z => d.Count(c => c == z) == 1).Select(1=>1)));
-        //    Console.ReadKey();
-
-
-        }
-
-        public static string Palindrome(string l)
-        {
-            //   Console.Write("word is: ");
-            //   string e = Console.ReadLine();
-            //   if (Palindrome(l)) Console.Write("this is palindrome")
-            // int n = l.Length;
-            // for (int i = 0; i<n; i++)
+            // Palindrome
+            int min = 0;
+            int max = str.Length - 1;
+            while (true)
             {
-                
+                if (min > max)
+                {
+                    return true;
+                }
+                char a = str[min];
+                char b = str[max];
+                if (char.ToLower(a) != char.ToLower(b))
+                {
+                    return false;
+                }
+                min++;
+                max--;
             }
         }
+        public static void EvenOdd(string str)
+        {
+            int l = 0;
+            char[] even = {};
+            char[] odd = {};
+            for (int m = 0; str.Length>=m; m++)
+            {
+                
+                if (m % 2 == 0)
+                {
+                    char x = str[m];
+                    even[l] = x;
+                }
+
+                else
+                {
+                    char x = str[m];
+                    odd[l] = x;
+                }
+                l++;
+            }
+            for (int i = 0; i < even.Length; i++)
+            {
+                Console.WriteLine(even[i]);
+            }
+            for (int i = 0; i < odd.Length; i++)
+            {
+                Console.WriteLine(odd[i]);
+            }
+            Console.Read();
+        }
+
+
 
     }
 }

@@ -6,8 +6,4 @@
     <RootNamespace>_335Labs</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="GirfanovaBakhmutova\" />
-  </ItemGroup>
-
 </Project>

@@ -1,10 +1,11 @@
-﻿using _335Labs.GirfanovaBakhmutova;
-using System;
+﻿using System;
+using static _335Labs.Girfanova.StringMetodsGirf;
+using static _335Labs.Girfanova.MathMetodsGirf;
 
 
-namespace _335Labs
-{
-    class Program
+namespace _335Labs.GirfanovaBakhmutova
+{ 
+    static class Program
     {
         static void Main(string[] args)
         {
@@ -41,7 +42,14 @@ namespace _335Labs
                 // Console.WriteLine();
             }
 
-            //
+            //StringMetods
+            {
+                // Palindrome
+                // bool a = Palindrome("akaka");
+                // Console.WriteLine(a);
+
+                EvenOdd("HelloThere");
+            }
         }
     }
 }

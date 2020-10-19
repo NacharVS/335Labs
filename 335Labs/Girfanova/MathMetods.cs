@@ -1,9 +1,8 @@
 ﻿using System;
-using _335Labs;
 
-namespace _335Labs.GirfanovaBakhmutova
+namespace _335Labs.Girfanova
 {
-    public class MathMetods
+    public class MathMetodsGirf
     {
         public static void FindRoot(int a, int b, int c, int x)
         {
