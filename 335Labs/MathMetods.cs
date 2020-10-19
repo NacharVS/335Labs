@@ -3,7 +3,7 @@ using _335Labs;
 
 namespace _335Labs.GirfanovaBakhmutova
 {
-    class MathMetods
+    public class MathMetods
     {
         public static void FindRoot(int a, int b, int c, int x)
         {
