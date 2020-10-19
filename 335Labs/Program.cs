@@ -8,36 +8,40 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            // Testing
+            //MathMetods
+            {
+                // Testing
 
-            // ax^2-bx+c
-            FindRoot(1, 2, 3, 4);
-
-
-            //c^2=a^2+b^2
-            Pyth(20, 30);
-        
-
-            // Circumference
-            Circumference(5);
+                // ax^2-bx+c
+                // FindRoot(1, 2, 3, 4);
 
 
-            // Circle's area
-            AreaCirc(5);
-    
+                //c^2=a^2+b^2
+                // Pyth(20, 30);
 
-            // Parallelepiped's area
-            VolParall(2, 3, 2);
-            
 
-            // amperage/voltage/resistance
-            CurrentCount(0, 5, 15);
-            
+                // Circumference
+                // Circumference(5);
 
-            // Finds result of division number by an interval of numbers
-            Division(15, 1,15);
-            Console.WriteLine();
 
+                // Circle's area
+                // AreaCirc(5);
+
+
+                // Parallelepiped's area
+                // VolParall(2, 3, 2);
+
+
+                // amperage/voltage/resistance
+                // CurrentCount(0, 5, 15);
+
+
+                // Finds result of division number by an interval of numbers
+                // Division(15, 1, 15);
+                // Console.WriteLine();
+            }
+
+            //
         }
     }
 }
