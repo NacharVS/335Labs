@@ -7,6 +7,7 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             Console.WriteLine(Methods.DivofInt(-5, 5, 10));
             Console.WriteLine(  );
             Console.WriteLine(Methods.xx(1, 5, 4));
@@ -22,6 +23,26 @@ namespace _335Labs
             Console.WriteLine(Methods.AVR(200,5));
             Console.WriteLine(Methods.RVA(200, 5));
             Console.WriteLine(Methods.VRA(40,5));
+=======
+            string s = "I don`t understand";
+            Console.WriteLine((Strings.Checht(s)));
+            Console.WriteLine(Strings.RD);
+            //Console.WriteLine(Methods.DivofInt(-5, 5, 10));
+            //Console.WriteLine(  );
+            //Console.WriteLine(Methods.xx(1, 5, 4));
+            //Console.WriteLine();
+            //Console.WriteLine(Methods.Pif(4, 3));
+            //Console.WriteLine();
+            //Console.WriteLine(Methods.Circum(5));
+            //Console.WriteLine();
+            //Console.WriteLine(Methods.CirArea(3));
+            //Console.WriteLine();
+            //Console.WriteLine(Methods.ParVol(3, 5));
+            //Console.WriteLine();
+            //Console.WriteLine(Methods.AVR(200,5));
+            //Console.WriteLine(Methods.RVA(200, 5));
+            //Console.WriteLine(Methods.VRA(40,5));
+>>>>>>> Stashed changes
         }
     }
 }
