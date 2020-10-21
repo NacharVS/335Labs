@@ -16,9 +16,10 @@ namespace _335Labs
             //Console.WriteLine(Methotds.Amperage(10, 5));
             //Console.WriteLine(Methotds.Voltage(2, 5));
             //Console.WriteLine(Methotds.Resistance(2, 10));
-            string a = "Best on the best";
+            string a = "Dovod";
             Console.WriteLine((strings1.First(a)));
             Console.WriteLine((strings1.Second(a)));
+            Console.WriteLine((strings1.Third(a)));
         }
     }
 }   
