@@ -8,7 +8,7 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            udalenie.Simvol(); 
+            BankAccount.UserAcc(); 
         }
     }
 }
