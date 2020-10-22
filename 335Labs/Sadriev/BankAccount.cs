@@ -42,13 +42,37 @@ namespace _335Labs.Sadriev
             Random rnd = new Random();
             int a = rnd.Next(1, 100000);
             _id = $"{a}";
-            Console.WriteLine($"Name:{_name} Surname:{_surname}   ID:{_id}");
-
-
-
-
-
+            Console.WriteLine($"Name:{_name}     Surname:{_surname}     ID:{_id}");
         }
+
+
+        public void PaymentAc(int a, string b)
+        {
+            
+            
+                if (b == "+")
+                {
+                    
+                    if (a < 10000) { Console.WriteLine("minimum  10000"); }
+                    else _paymentAccount += +a;
+                }
+                else if (b == "-")
+                {
+                    
+                    if (a > 200000) { Console.WriteLine("maximum  200000"); }
+                    else _paymentAccount = _paymentAccount - a;
+                    
+                }
+                Console.WriteLine("payment:  " + _paymentAccount);
+            
+        }
+
+
+
+
+
+
+        
         
 
 

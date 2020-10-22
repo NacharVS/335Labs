@@ -10,6 +10,7 @@ namespace _335Labs
         {
             BankAccount polz = new BankAccount();
             polz.regist("Rinat", "Sadriev");
+            polz.PaymentAc(15000, "+");
 
 
 
