@@ -8,18 +8,18 @@ namespace _335Labs.Shagaviev_Barygin
     { 
          public static void Chisl()
         {
-            string word = "вводное слово";
-            int first = -1;
-            int last = -1;
-            foreach (char ch in word)
+            string s = "Vestibul";
+                string odd = null;
+            string even = null;
+            for (int i=0; i < s.Length; i++)
             {
-                first = word.IndexOf(ch);
-                last = word.LastIndexOf(ch);
-                if (first != -1 && last != -1 && first != last)
-                    word = word.Replace(ch.ToString(), "");
+                if (i % 2 == 0)
+                    even += s[i];
+                else odd += s[i];
             }
-            Console.Write(word);
-            Console.ReadKey();
+            Console.WriteLine(even);
+            Console.WriteLine(odd);
         }
+
     }
 }
