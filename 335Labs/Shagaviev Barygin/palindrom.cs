@@ -6,6 +6,6 @@ namespace _335Labs.Shagaviev_Barygin
 {
     class palindrom
     {
-        
+      
     }
 }
