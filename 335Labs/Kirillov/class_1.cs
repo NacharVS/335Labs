@@ -36,7 +36,7 @@ namespace _335Labs.Kirillov
             {
                 return y;
             }
-              
+
         }
 
         static public double Pifagor_T(double a, double b)

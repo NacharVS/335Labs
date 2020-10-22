@@ -4,7 +4,7 @@ namespace _335Labs
 {
     class test_1
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
 
             // 1) Area of a circle
