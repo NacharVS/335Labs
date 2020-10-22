@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace _335Labs
+namespace _335Labs.Khabibrakhmanov
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string a = Console.ReadLine();
-            Console.WriteLine(a);
-            Console.WriteLine("Hi, man");
+            BankAccount srtr = new BankAccount();
+            srtr.Account("Rouse", )
         }
     }
 }
