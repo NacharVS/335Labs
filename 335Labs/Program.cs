@@ -9,11 +9,31 @@ namespace _335Labs
         static void Main(string[] args)
         {
             BankAccount polz = new BankAccount();
-            polz.regist("Rinat", "Sadriev");
-            polz.PaymentAc(15000, "+");
+
+            string ss = polz.Regist("Alena", "Alinovna");
+            Console.WriteLine(ss);
+            string gg = polz.Info(ss);
+            Console.WriteLine(gg);
 
 
-
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+             
+            
+            
             //string s = "I don`t understand";
             //Console.WriteLine((Strings.Checht(s)));
             //Console.WriteLine(Strings.RD(s));

@@ -13,7 +13,7 @@ namespace _335Labs.Sadriev
         private double _paymentAccount;
 
         
-        public  void regist(string newName,string newSurname)
+        public  string Regist(string newName,string newSurname)
         {
             newName = newName.Trim();
             var FL= newName[0];
@@ -24,29 +24,20 @@ namespace _335Labs.Sadriev
             var ol = newSurname.Remove(0, 1);
             _surname = fl.ToString().ToUpper() + ol.ToLower();
             Random rnd = new Random();
-            int a = rnd.Next(1, 100000);
+            int a = rnd.Next(1, 100);
             _id = $"{a}";
-            Console.WriteLine($"Name:{_name} Surname:{_surname}   ID:{_id}");
+            string akk = _id + " " + _surname + " " + _name; 
+            return akk;
         }
-        public void rename(string reName, string reSurname)
+        public string Rename(string reName, string reSurname)
         {
-
-            reName = reName.Trim();
-            var FL = reName[0];
-            var OL = reName.Remove(0, 1);
-            _name = FL.ToString().ToUpper() + OL.ToLower();
-            reSurname = reSurname.Trim();
-            var fl = reSurname[0];
-            var ol = reSurname.Remove(0, 1);
-            _surname = fl.ToString().ToUpper() + ol.ToLower();
-            Random rnd = new Random();
-            int a = rnd.Next(1, 100000);
-            _id = $"{a}";
-            Console.WriteLine($"Name:{_name}     Surname:{_surname}     ID:{_id}");
+            _name = reName;
+            _surname = reSurname;
+            string rakk = _id + " " + _surname + " " + _name;
+            return rakk;
         }
 
-
-        public void PaymentAc(int a, string b)
+        public double PaymentAc(double a, string b)
         {
             
             
@@ -63,8 +54,17 @@ namespace _335Labs.Sadriev
                     else _paymentAccount = _paymentAccount - a;
                     
                 }
-                Console.WriteLine("payment:  " + _paymentAccount);
-            
+                
+            return _paymentAccount;
+        }
+        public void PaymentAc()
+        {
+            Console.WriteLine("payment:  "+ _paymentAccount);
+        }
+        public string Info(string ss)
+        {
+            string ii = _id + " " + _surname + " " + _name + " " + _paymentAccount;
+            return ii;
         }
 
 
@@ -72,8 +72,9 @@ namespace _335Labs.Sadriev
 
 
 
-        
-        
+
+
+
 
 
 
