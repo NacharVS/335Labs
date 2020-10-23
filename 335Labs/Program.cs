@@ -17,9 +17,11 @@ namespace _335Labs
             //Console.WriteLine(Methotds.Voltage(2, 5));
             //Console.WriteLine(Methotds.Resistance(2, 10));
             string a = "Dovod";
-            Console.WriteLine((strings1.First(a)));
-            Console.WriteLine((strings1.Second(a)));
-            Console.WriteLine((strings1.Third(a)));
+            //Console.WriteLine((strings1.First(a)));
+            //Console.WriteLine((strings1.Second(a)));
+            //Console.WriteLine((strings1.Third(a)));
+            Bank account = new Bank();
+            account.Account("Rouse", "Nent");
         }
     }
 }   
