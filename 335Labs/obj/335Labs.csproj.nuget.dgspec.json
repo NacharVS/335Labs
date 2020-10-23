@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ainiya\\smartgit-win-20_1_5\\335Labs\\335Labs\\335Labs.csproj": {}
+    "C:\\Users\\schgr\\source\\repos\\335Labs\\335Labs\\335Labs.csproj": {}
   },
   "projects": {
-    "D:\\Ainiya\\smartgit-win-20_1_5\\335Labs\\335Labs\\335Labs.csproj": {
+    "C:\\Users\\schgr\\source\\repos\\335Labs\\335Labs\\335Labs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ainiya\\smartgit-win-20_1_5\\335Labs\\335Labs\\335Labs.csproj",
+        "projectUniqueName": "C:\\Users\\schgr\\source\\repos\\335Labs\\335Labs\\335Labs.csproj",
         "projectName": "335Labs",
-        "projectPath": "D:\\Ainiya\\smartgit-win-20_1_5\\335Labs\\335Labs\\335Labs.csproj",
-        "packagesPath": "C:\\Users\\Айния\\.nuget\\packages\\",
-        "outputPath": "D:\\Ainiya\\smartgit-win-20_1_5\\335Labs\\335Labs\\obj\\",
+        "projectPath": "C:\\Users\\schgr\\source\\repos\\335Labs\\335Labs\\335Labs.csproj",
+        "packagesPath": "C:\\Users\\schgr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\schgr\\source\\repos\\335Labs\\335Labs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Айния\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\schgr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
