@@ -28,12 +28,17 @@ namespace _335Labs.Shagaviev_Barygin
            
          
         }
-        public static void _id
-        
+        public class AccountAction
         {
-            ID = _uniqueId;
-            _uniqueId++;
+            public DateTime Date { get; set; }
+
+            public ActionType Type { get; set; }
+
+            public decimal Amount { get; set; }
         }
+
+
+
 
     }
 }
