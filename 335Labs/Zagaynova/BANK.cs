@@ -74,7 +74,11 @@ namespace _335Labs.Zagaynova
             string ifoss = _id + " " + _name + " " + _surname  + " " + _paymentAccount;
             return ifoss;
         }   
-           
+           public double Proc()
+        { double stProc =_paymentAccount*0.067;
+
+            return stProc;
+        }
             
     }
 
