@@ -6,7 +6,7 @@ namespace _335Labs.Shagaviev_Barygin
 { }
 public class Bank
 {
-    private void OpenNewAccount(Client client)
+    public static  Main OpenNewAccount(Client client)
     {
         var account = new Account
         {
@@ -22,6 +22,10 @@ public class Bank
     {
         throw new NotImplementedException();
     }
+}
+
+public class Main
+{
 }
 
 internal class Client
