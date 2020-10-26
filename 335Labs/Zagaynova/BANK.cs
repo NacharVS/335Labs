@@ -15,6 +15,7 @@ namespace _335Labs.Zagaynova
         private string _id;
 
         private double _paymentAccount;
+        private static double _Stavka= 0.067;
 
         public string Registration(string newName, string newSurname)
         {
@@ -51,6 +52,7 @@ namespace _335Labs.Zagaynova
                 if (a > 200000) { Console.WriteLine("maximum amount 200 000"); }
                 else _paymentAccount = _paymentAccount - a;
             }
+            
             return _paymentAccount;
         }
 
@@ -61,23 +63,36 @@ namespace _335Labs.Zagaynova
         }
         public string Edit(string rname, string rsurname)
         {
-            _name = rname;
-            _surname = rsurname;
+            rname = rname.Trim();
+            var first = rname[0];
+            var other = rname.Remove(0, 1);
+            _name = first.ToString().ToUpper() + other.ToLower();
+            rsurname = rsurname.Trim();
+            var firsts = rsurname[0];
+            var others = rsurname.Remove(0, 1);
+            _surname = firsts.ToString().ToUpper() + others.ToLower();
+            
+           
             string reakk = _id + " " + _name + " " + _surname;
 
             return reakk;
         }
 
-        public string Info(string ss)
+        public string Info()
 
         {
             string ifoss = _id + " " + _name + " " + _surname  + " " + _paymentAccount;
             return ifoss;
         }   
-           public double Proc()
-        { double stProc =_paymentAccount*0.067;
+           public double  Proc()
+        {
+            _paymentAccount +=  _paymentAccount * _Stavka;
 
-            return stProc;
+            return _paymentAccount;
+        }
+        public static void ReProc(double newProc)
+        {
+            _Stavka = newProc / 100;
         }
             
     }
