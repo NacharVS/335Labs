@@ -41,4 +41,8 @@ namespace _335Labs.Shagaviev_Barygin
 
 
     }
+
+    public class ActionType
+    {
+    }
 }

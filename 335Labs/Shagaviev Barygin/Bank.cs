@@ -27,6 +27,12 @@ public class Bank
 internal class Client
 {
     public object FullName { get; internal set; }
+    public object ID { get; internal set; }
+
+    internal void CreateAccount(Account account)
+    {
+        throw new NotImplementedException();
+    }
 }
 
 internal class Account
