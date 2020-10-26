@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace _335Labs.Sadriev
 {
@@ -31,10 +32,19 @@ namespace _335Labs.Sadriev
         }
         public string Rename(string reName, string reSurname)
         {
-            _name = reName;
-            _surname = reSurname;
-            string rakk = _id + " " + _surname + " " + _name;
-            return rakk;
+            reName = reName.Trim();
+            var FL = reName[0];
+            var OL = reName.Remove(0, 1);
+            _name = FL.ToString().ToUpper() + OL.ToLower();
+            reSurname = reSurname.Trim();
+            var fl = reSurname[0];
+            var ol = reSurname.Remove(0, 1);
+            _surname = fl.ToString().ToUpper() + ol.ToLower();
+            Random rnd = new Random();
+            int a = rnd.Next(1, 100);
+            _id = $"{a}";
+            string reak = _id + " " + _surname + " " + _name;
+            return reak;
         }
 
         public double PaymentAc(double a, string b)
@@ -59,20 +69,20 @@ namespace _335Labs.Sadriev
         {
             Console.WriteLine("payment:  "+ _paymentAccount);
         }
-        public string Info(string ss)
+        public void Info()
         {
             string ii = _id + " " + _surname + " " + _name + " " + _paymentAccount;
-            return ii;
+            Console.WriteLine(ii) ;
         }
-        public string Rrate()
+        public double Rate()
         {
-
-
-
-
-            return "";
+            _paymentAccount +=  _paymentAccount * _rate/100;
+            return _paymentAccount;
         }
-
+        public static void Rerate(double rerate)
+        {
+            _rate = rerate ;
+        }
 
 
 
