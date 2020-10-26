@@ -11,29 +11,34 @@ namespace _335Labs
             BankAccount polz = new BankAccount();
 
             string ss = polz.Regist("Alena", "Alinovna");
-            Console.WriteLine(ss);
+             
+            polz.PaymentAc(200000, "+");
+            polz.PaymentAc(10000, "-");
             string gg = polz.Info(ss);
+            Console.WriteLine(gg);
+            ss = polz.Rename("Alina", "Alenovna");
+            gg = polz.Info(ss);
             Console.WriteLine(gg);
 
 
-           
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-             
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             //string s = "I don`t understand";
             //Console.WriteLine((Strings.Checht(s)));
             //Console.WriteLine(Strings.RD(s));

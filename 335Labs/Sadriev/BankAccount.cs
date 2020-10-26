@@ -9,7 +9,7 @@ namespace _335Labs.Sadriev
         private  string _name;
         private  string _surname;
         private string _id;
-        private double _rate = 6.7;
+        private static double _rate = 6.7;
         private double _paymentAccount;
 
         
@@ -39,21 +39,19 @@ namespace _335Labs.Sadriev
 
         public double PaymentAc(double a, string b)
         {
-            
-            
-                if (b == "+")
-                {
+           if (b == "+")
+           {
                     
-                    if (a < 10000) { Console.WriteLine("minimum  10000"); }
-                    else _paymentAccount += +a;
-                }
-                else if (b == "-")
-                {
+              if (a < 10000) { Console.WriteLine("minimum  10000"); }
+              else _paymentAccount += +a;
+           }
+            else if (b == "-")
+            {
                     
-                    if (a > 200000) { Console.WriteLine("maximum  200000"); }
-                    else _paymentAccount = _paymentAccount - a;
+              if (a > 200000) { Console.WriteLine("maximum  200000"); }
+              else _paymentAccount = _paymentAccount - a;
                     
-                }
+            }
                 
             return _paymentAccount;
         }
@@ -66,6 +64,16 @@ namespace _335Labs.Sadriev
             string ii = _id + " " + _surname + " " + _name + " " + _paymentAccount;
             return ii;
         }
+        public string Rrate()
+        {
+
+
+
+
+            return "";
+        }
+
+
 
 
 
