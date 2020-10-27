@@ -11,10 +11,12 @@ namespace _335Labs
             BankAccount polz = new BankAccount();
 
             polz.Regist("alena", "alinovna");
+            
             polz.Info();
             polz.PaymentAc(30000, "+");
             polz.PaymentAc(10000, "-");
             polz.Rename("     gafur", "      tentovich");
+            polz.Age = 2002;
             polz.Rate();
             polz.Info();
             BankAccount.Rerate(5.2);

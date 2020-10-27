@@ -41,9 +41,6 @@ namespace _335Labs.Sadriev
             var fl = reSurname[0];
             var ol = reSurname.Remove(0, 1);
             _surname = fl.ToString().ToUpper() + ol.ToLower();
-            Random rnd = new Random();
-            int a = rnd.Next(1, 100);
-            _id = $"{a}";
             string reak = _id + " " + _surname + " " + _name;
             return reak;
         }
@@ -88,19 +85,17 @@ namespace _335Labs.Sadriev
         {
             get
             {
-                return _age;
+                if (_age > 14 & _age < 150)
+                    return _age;
+                else Console.WriteLine("error");
+                return 0;
             }
             set
             {
-                _age = value;
+
                 int a = DateTime.Now.Year;
                 _age = a - value;
             }
-
-
-
-
-
         }
 
 
