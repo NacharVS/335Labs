@@ -6,7 +6,7 @@ namespace _335Labs.Shagaviev_Barygin
 { }
 public class Bank
 {
-    public static  Main OpenNewAccount(Client client)
+    public static void OpenNewAccount(Client client)
     {
         var account = new Account
         {
@@ -26,6 +26,7 @@ public class Bank
 
 public class Main
 {
+    int a = DateTime.Now.Year;
 }
 
 internal class Client
