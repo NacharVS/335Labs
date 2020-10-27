@@ -14,19 +14,19 @@ namespace _335Labs.Kirillov
         public void Bank_Account(string newn, string newsur)
         {
             newn = newn.Trim();
-            var firstLetter = newn[0];
-            var otherLetters = newn.Remove(0, 1);
-            _name = firstLetter.ToString().ToUpper() + otherLetters;
+            var first = newn[0];
+            var second = newn.Remove(0, 1);
+            _name = first.ToString().ToUpper() + second;
             newsur = newsur.Trim();
-            var firstLetterr = newsur[0];
-            var otherLetterrs = newsur.Remove(0, 1);
-            _lastname = firstLetterr.ToString().ToUpper() + otherLetterrs;
+            var firstt = newsur[0];
+            var secondd = newsur.Remove(0, 1);
+            _lastname = firstt.ToString().ToUpper() + secondd;
             Console.WriteLine(newsur);
             Random rnd = new Random();
-            int a = rnd.Next(888, 88888888);
-            _id = $"{a}";
+            int  id = rnd.Next(888, 88888888);
+            _id = $"{id}";
             Console.WriteLine($"Имя: {_name} Фамилия: {_lastname}");
-            Console.WriteLine($"#ID: {a}");
+            Console.WriteLine($"ID сессии: {id}");
         }
     }
 }
