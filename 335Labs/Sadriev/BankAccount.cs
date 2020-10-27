@@ -12,6 +12,7 @@ namespace _335Labs.Sadriev
         private string _id;
         private static double _rate = 6.7;
         private double _paymentAccount;
+        private int _age;
 
         
         public  string Regist(string newName,string newSurname)
@@ -71,7 +72,7 @@ namespace _335Labs.Sadriev
         }
         public void Info()
         {
-            string ii = _id + " " + _surname + " " + _name + " " + _paymentAccount;
+            string ii = _id + " "+_age+ " " + _surname + " " + _name + " " + _paymentAccount;
             Console.WriteLine(ii) ;
         }
         public double Rate()
@@ -83,7 +84,24 @@ namespace _335Labs.Sadriev
         {
             _rate = rerate ;
         }
+        public int Age
+        {
+            get
+            {
+                return _age;
+            }
+            set
+            {
+                _age = value;
+                int a = DateTime.Now.Year;
+                _age = a - value;
+            }
 
+
+
+
+
+        }
 
 
 
