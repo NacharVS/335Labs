@@ -22,6 +22,9 @@ namespace _335Labs
             //Console.WriteLine((strings1.Third(a)));
             Bank account = new Bank();
             account.Account("Rouse", "Nent");
+            account.Rename("Adel", "Gil");
+            account.PaymentAccount(50000, "+");
+            account.Info();
         }
     }
 }   
