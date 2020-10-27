@@ -24,9 +24,11 @@ public class Bank
     }
 }
 
-public class Main
+public void Main(string[] args)
 {
     int a = DateTime.Now.Year;
+    DateTime dayofbirth = new DateTime(1990, 2, 2);
+    Console.WriteLine($"dd{dayofbirth.Day} mm{dayofbirth.Month} yy{dayofbirth.Year}");
 }
 
 internal class Client

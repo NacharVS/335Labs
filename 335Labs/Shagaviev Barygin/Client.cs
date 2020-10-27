@@ -11,6 +11,7 @@ namespace _335Labs.Shagaviev_Barygin
         private string name;
         private Client()
         {
+
         }
         public Client(string n)
         {
@@ -28,3 +29,4 @@ namespace _335Labs.Shagaviev_Barygin
         }
 
     }
+}
