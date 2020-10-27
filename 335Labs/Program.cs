@@ -12,9 +12,11 @@ namespace _335Labs.Kirillov
             string newn = Console.ReadLine();
             Console.WriteLine("Введите вашу фамилию: ");
             string newsur = Console.ReadLine();
+            Console.WriteLine("Введите название вашего банка: ");
+            string bankn = Console.ReadLine();
 
             bank_acc bankacc = new bank_acc();
-            bankacc.Bank_Account(newn, newsur);
+            bankacc.Bank_account_access(newn, newsur, bankn);
 
         }
     }
