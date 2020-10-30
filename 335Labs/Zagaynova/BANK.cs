@@ -18,8 +18,10 @@ namespace _335Labs.Zagaynova
         private double _paymentAccount;
         private static double _Stavka= 0.067;
 
-        public string Registration(string newName, string newSurname,DateTime date)
+        public string Registration(string newName, string newSurname,int yy, int mm, int dd)
         {
+            int aa = DateTime.Now.Year;
+            DateTime date = new DateTime(yy,mm,dd);
            newName = newName.Trim();
             var first = newName[0];
             var other = newName.Remove(0, 1);
@@ -31,8 +33,11 @@ namespace _335Labs.Zagaynova
             Random rnd = new Random();
             int a = rnd.Next(1000, 9999);
             _id = a.ToString();
-            _age = Convert.ToInt32(DateTime.Now - date);
-            
+
+            _age = aa - date.Year;
+            if (date > DateTime.Now.AddYears(-_age)) Age--;
+
+
 
             return "";
          }
@@ -43,20 +48,7 @@ namespace _335Labs.Zagaynova
             set
             { _age = value; }
         }   
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
+         
         public double PaymentAc(int a, string s)
         //положить минимум 10 000
         //снять максимум 200 000
