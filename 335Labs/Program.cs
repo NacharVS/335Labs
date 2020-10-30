@@ -2,131 +2,71 @@
 
 namespace _335Labs
 {
-
     class Program
     {
-        static void Main(string[] args)
+
+        private string _name;
+        private string _lastname;
+        private string _id;
+        private double _paymentAccount;
+        
+        public void Account(string newName, string newLastname)
         {
-            Bank<Account> bank = new Bank<Account>("ЮнитБанк");
-            bool alive = true;
-            while (alive)
+            newName = newName.Trim();
+            var firstLetter = newName[0];
+            var otherLetters = newName.Remove(0, 1);
+            _name = firstLetter.ToString().ToUpper() + otherLetters;
+            newLastname = newLastname.Trim();
+            var firstLetterr = newLastname[0];
+            var otherLetterrs = newLastname.Remove(0, 1);
+            _lastname = firstLetterr.ToString().ToUpper() + otherLetterrs;
+            Random rnd = new Random();
+            int a = rnd.Next(888, 88888888);
+            _id = $"{a}";
+            Console.WriteLine($"Name: {_name}");
+            Console.WriteLine($"Last Name: { _lastname}");
+            Console.WriteLine($"#ID: {a}");
+        }
+        public void Rename(string reName, string reLastname)
+        {
+            reName = reName.Trim();
+            var firstLetter = reName[0];
+            var otherLetters = reName.Remove(0, 1);
+            _name = firstLetter.ToString().ToUpper() + otherLetters;
+            reLastname = reLastname.Trim();
+            var firstLetterr = reLastname[0];
+            var otherLetterrs = reLastname.Remove(0, 1);
+            _lastname = firstLetterr.ToString().ToUpper() + otherLetterrs;
+            Random rnd = new Random();
+            int a = rnd.Next(888, 88888888);
+            _id = $"{a}";
+            Console.WriteLine($"Name: {_name}");
+            Console.WriteLine($"Last Name: { _lastname}");
+            Console.WriteLine($"#ID: {a}");
+        }
+        public double PaymentAccount(double a, string b)
+        {
+            if (b == "+")
             {
-                ConsoleColor color = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.DarkGreen; // выводим список команд зеленым цветом
-                Console.WriteLine("1. Открыть счет \t 2. Вывести средства  \t 3. Добавить на счет");
-                Console.WriteLine("4. Закрыть счет \t 5. Пропустить день \t 6. Выйти из программы");
-                Console.WriteLine("Введите номер пункта:");
-                Console.ForegroundColor = color;
-                try
-                {
-                    int command = Convert.ToInt32(Console.ReadLine());
-
-                    switch (command)
-                    {
-                        case 1:
-                            OpenAccount(bank);
-                            break;
-                        case 2:
-                            Withdraw(bank);
-                            break;
-                        case 3:
-                            Put(bank);
-                            break;
-                        case 4:
-                            CloseAccount(bank);
-                            break;
-                        case 5:
-                            break;
-                        case 6:
-                            alive = false;
-                            continue;
-                    }
-                    bank.CalculatePercentage();
-                }
-                catch (Exception ex)
-                {
-                    // выводим сообщение об ошибке красным цветом
-                    color = Console.ForegroundColor;
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(ex.Message);
-                    Console.ForegroundColor = color;
-                }
+                if (a < 10000) { Console.WriteLine("min 10000"); }
+                else _paymentAccount += +a;
             }
+            else if (b == "-")
+            {
+                if (a > 200000) { Console.WriteLine("max 200000"); }
+                else _paymentAccount = _paymentAccount - a;
+
+            }
+            return _paymentAccount;
         }
-
-        private static void OpenAccount(Bank<Account> bank)
+        public void PaymentAccount()
         {
-            Console.WriteLine("Укажите сумму для создания счета:");
-
-            decimal sum = Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine("Выберите тип счета: 1. До востребования 2. Депозит");
-            AccountType accountType;
-
-            int type = Convert.ToInt32(Console.ReadLine());
-
-            if (type == 2)
-                accountType = AccountType.Deposit;
-            else
-                accountType = AccountType.Ordinary;
-
-            bank.Open(accountType,
-                sum,
-                AddSumHandler,  // обработчик добавления средств на счет
-                WithdrawSumHandler, // обработчик вывода средств
-                (o, e) => Console.WriteLine(e.Message), // обработчик начислений процентов в виде лямбда-выражения
-                CloseAccountHandler, // обработчик закрытия счета
-                OpenAccountHandler); // обработчик открытия счета
+            Console.WriteLine("payment:" + _paymentAccount);
         }
-
-        private static void Withdraw(Bank<Account> bank)
+        public void Info()
         {
-            Console.WriteLine("Укажите сумму для вывода со счета:");
-
-            decimal sum = Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine("Введите id счета:");
-            int id = Convert.ToInt32(Console.ReadLine());
-
-            bank.Withdraw(sum, id);
-        }
-
-        private static void Put(Bank<Account> bank)
-        {
-            Console.WriteLine("Укажите сумму, чтобы положить на счет:");
-            decimal sum = Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine("Введите Id счета:");
-            int id = Convert.ToInt32(Console.ReadLine());
-            bank.Put(sum, id);
-        }
-
-        private static void CloseAccount(Bank<Account> bank)
-        {
-            Console.WriteLine("Введите id счета, который надо закрыть:");
-            int id = Convert.ToInt32(Console.ReadLine());
-
-            bank.Close(id);
-        }
-        // обработчики событий класса Account
-        // обработчик открытия счета
-        private static void OpenAccountHandler(object sender, AccountEventArgs e)
-        {
-            Console.WriteLine(e.Message);
-        }
-        // обработчик добавления денег на счет
-        private static void AddSumHandler(object sender, AccountEventArgs e)
-        {
-            Console.WriteLine(e.Message);
-        }
-        // обработчик вывода средств
-        private static void WithdrawSumHandler(object sender, AccountEventArgs e)
-        {
-            Console.WriteLine(e.Message);
-            if (e.Sum > 0)
-                Console.WriteLine("Идем тратить деньги");
-        }
-        // обработчик закрытия счета
-        private static void CloseAccountHandler(object sender, AccountEventArgs e)
-        {
-            Console.WriteLine(e.Message);
+            string Info = _id + "_" + _lastname + "_" + _name + "_" + _paymentAccount;
+            Console.WriteLine(Info);
         }
     }
 }
