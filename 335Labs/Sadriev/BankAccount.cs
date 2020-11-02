@@ -1,21 +1,21 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
 namespace _335Labs.Sadriev
 {
-    class BankAccount
+    class Person
     {
         private  string _name;
         private  string _surname;
         private string _id;
-        private static double _rate = 6.7;
-        private double _paymentAccount;
         private int _age;
 
-        
-        public  string Regist(string newName,string newSurname)
+
+
+        public string Regist(string newName, string newSurname, int year, int mouth, int day)
         {
             newName = newName.Trim();
             var FL= newName[0];
@@ -28,7 +28,11 @@ namespace _335Labs.Sadriev
             Random rnd = new Random();
             int a = rnd.Next(1, 100);
             _id = $"{a}";
-            string akk = _id + " " + _surname + " " + _name; 
+            int now = DateTime.Now.Year;
+            DateTime d = new DateTime(year, mouth, day);
+            _age = now -d.Year;
+            if (d > DateTime.Now.AddYears(-_age)) Age--;
+            string akk = _id + " " + _surname + " " + _name + " " + _age;
             return akk;
         }
         public string Rename(string reName, string reSurname)
@@ -45,42 +49,6 @@ namespace _335Labs.Sadriev
             return reak;
         }
 
-        public double PaymentAc(double a, string b)
-        {
-           if (b == "+")
-           {
-                    
-              if (a < 10000) { Console.WriteLine("minimum  10000"); }
-              else _paymentAccount += +a;
-           }
-            else if (b == "-")
-            {
-                    
-              if (a > 200000) { Console.WriteLine("maximum  200000"); }
-              else _paymentAccount = _paymentAccount - a;
-                    
-            }
-                
-            return _paymentAccount;
-        }
-        public void PaymentAc()
-        {
-            Console.WriteLine("payment:  "+ _paymentAccount);
-        }
-        public void Info()
-        {
-            string ii = _id + " "+_age+ " " + _surname + " " + _name + " " + _paymentAccount;
-            Console.WriteLine(ii) ;
-        }
-        public double Rate()
-        {
-            _paymentAccount +=  _paymentAccount * _rate/100;
-            return _paymentAccount;
-        }
-        public static void Rerate(double rerate)
-        {
-            _rate = rerate ;
-        }
         public int Age
         {
             get
@@ -88,29 +56,73 @@ namespace _335Labs.Sadriev
                 if (_age > 14 & _age < 150)
                     return _age;
                 else Console.WriteLine("error");
-                return 0;
+                return Age;
             }
             set
             {
-
-                int a = DateTime.Now.Year;
-                _age = a - value;
+                _age = value;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        public void Info()
+        {
+            string ii = _id + " " + " " + _surname + " " + _name;
+            Console.WriteLine(ii);
+        }
 
     }
+    class Client : Person
+    {
+        private static double _rate = 6.7;
+        private double _paymentAccount;
+        public double PaymentAc(double a, string b)
+        {
+            if (b == "+")
+            {
+                if (a < 10000) { Console.WriteLine("minimum  10000"); }
+                else _paymentAccount += +a;
+            }
+            else if (b == "-")
+            {
+                if (a > 200000) { Console.WriteLine("maximum  200000"); }
+                else _paymentAccount = _paymentAccount - a;
+            }
+            return _paymentAccount;
+        }
+        public void PaymentAc()
+        {
+            Console.WriteLine("payment:  " + _paymentAccount);
+        }
+        public void InfoC()
+        {
+            string ii =  "Money:   " + _paymentAccount;
+            Console.WriteLine(ii);
+        }
+        public double Rate()
+        {
+            _paymentAccount += _paymentAccount * _rate / 100;
+            return _paymentAccount;
+        }
+        public static void Rerate(double rerate)
+        {
+            _rate = rerate;
+        }
+    }
+    class Employee : Person
+    {
+        private string _position;
+        public string position
+        {
+            get
+            { return _position; }
+            set
+            { _position = value; }
+        }
+        public void InfoE()
+        {
+            string ii = "Position: " + _position;
+            Console.WriteLine(ii);
+        }
+    
+    }
+
 }
