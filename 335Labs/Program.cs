@@ -1,4 +1,5 @@
 ﻿using System;
+using _335Labs.Familiya;
 
 namespace _335Labs
 {
@@ -6,7 +7,6 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
         }
     }
 }
