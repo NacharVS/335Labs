@@ -4,6 +4,7 @@ using System.Text;
 
 namespace _335Labs.Khabibrakhmanov.Deligated
 {
+   
     class Boss
     {
     }
