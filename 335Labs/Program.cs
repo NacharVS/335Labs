@@ -2,12 +2,20 @@
 
 namespace _335Labs
 {
-    class Program
+    class Student 
     {
-        static void Main(string[] args)
+        private string _name;
+        private string _company;
+
+        public void SetName(string newName)
         {
-            string a = Console.ReadLine();
-            Console.WriteLine(a);
+
+            newName = newName.Trim();
+            var firstLetter = newName[0]
+            var otherLetters = newName.Remove(0, 1);
+            _name = (firstLetter.ToString().ToUpper() + otherLetters);
+
         }
-    }
-}
+        public void ShowName();
+        { 
+
