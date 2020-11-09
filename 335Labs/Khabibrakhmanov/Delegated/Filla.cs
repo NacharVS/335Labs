@@ -18,13 +18,6 @@ namespace _335Labs.Khabibrakhmanov.Deligated
             }
         }
     }
-    static int Sortirovka()
-    {
-
-
-    }
-    static int Summa()
-        }
-
+  
 }
 

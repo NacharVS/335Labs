@@ -8,8 +8,18 @@ namespace _335Labs.Khabibrakhmanov
     {
         static void Main(string[] args)
         {
-            BankAccount srtr = new BankAccount();
-            srtr.Account("Rouse", )
+            public static void Main(string[] args)
+            {
+                int[] myArray = new int[10];
+                Random rand = new Random();
+
+                for (int x = 0; x < myArray.Length; x++)
+                {
+                    myArray[x] = rand.Next(20);
+                    Console.WriteLine("Значение элемента массива " + x + " = " + myArray[x]);
+                }
+            }
+
         }
     }
 }
