@@ -8,7 +8,7 @@ namespace _335Labs.Shagaviev_Barygin.Delegate
     {
         static void Main(string[] args)
         {
-            SumElements.El();
+            SumTwoMas.STM();
         }
     }
 }
