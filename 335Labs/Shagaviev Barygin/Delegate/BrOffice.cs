@@ -6,7 +6,7 @@ namespace _335Labs.Shagaviev_Barygin.Delegate
 {
     class BrOffice
     {
-        static void Main(string[] args)
+       public static void Sort()
         {
 
             int[] nums = new int[7];
