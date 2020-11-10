@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="C:\Users\351803\Desktop\проги\Bank2.cs" Link="Bank2.cs" />
-    <Compile Include="C:\Users\351803\Desktop\проги\BankAccount.cs" Link="BankAccount.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
