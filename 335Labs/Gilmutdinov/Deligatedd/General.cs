@@ -6,5 +6,6 @@ namespace _335Labs.Gilmutdinov.Deligatedd
 {
     class General
     {
+        private delegate void First(int a);
     }
 }
