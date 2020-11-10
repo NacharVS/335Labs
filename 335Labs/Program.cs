@@ -1,5 +1,5 @@
 ﻿using System;
-using _335Labs.Familiya;
+using _335Labs.Agafetov;
 
 namespace _335Labs
 {
@@ -7,6 +7,9 @@ namespace _335Labs
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(delegates.);
+
         }
+
     }
 }

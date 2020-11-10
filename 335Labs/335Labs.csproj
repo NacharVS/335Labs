@@ -6,4 +6,10 @@
     <RootNamespace>_335Labs</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Nizamov\**" />
+    <EmbeddedResource Remove="Nizamov\**" />
+    <None Remove="Nizamov\**" />
+  </ItemGroup>
+
 </Project>
