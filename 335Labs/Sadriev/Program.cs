@@ -5,26 +5,21 @@ namespace _335Labs.Sadriev.Delegates
 {
     class Program
     {
-        
+      
         static void Main(string[] args)
         {
 
-            int[] a = { 12, 5, 1, 7, 8, 2131, 12, 43 };
-            Branchs.Sortby(a);
+            int[] array = { 1, 2, 43, 76, 12 };
+            int[] array1 = { 12, 645, 12, 65, 51};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
+            Branchs.DuoMassiv test2;
+            test2 = General.DuoSum;
+            test2 = General.DuoMult;
+            test2(array, array1);
+            Branchs.SoloMassiv test1;
+            test1 = General.Max;
+            test1(array);
 
 
 
