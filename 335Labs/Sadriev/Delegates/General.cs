@@ -9,5 +9,12 @@ namespace _335Labs.Sadriev.Delegates
     {
         private delegate void SoloMassiv(int a);
         private delegate void DuoMassiv(int a, int b);
+       
+            
+
+
+        
     }
+
 }
+

@@ -1,30 +1,16 @@
 ﻿using _335Labs.Sadriev;
 using System;
 
-namespace _335Labs
+namespace _335Labs.Sadriev.Delegates
 {
     class Program
     {
         
         static void Main(string[] args)
         {
-            BankAccount polz = new BankAccount();
 
-            polz.Regist("alena", "alinovna");
-            
-            polz.Info();
-            polz.PaymentAc(30000, "+");
-            polz.PaymentAc(10000, "-");
-            polz.Rename("     gafur", "      tentovich");
-            polz.Age = 2002;
-            polz.Rate();
-            polz.Info();
-            BankAccount.Rerate(5.2);
-            polz.Rate();
-            polz.Info();
-
-           
-          
+            int[] a = { 12, 5, 1, 7, 8, 2131, 12, 43 };
+            Branchs.Sortby(a);
 
 
 
@@ -45,6 +31,29 @@ namespace _335Labs
 
 
 
+
+
+
+
+
+
+
+
+            //Client client = new Client();
+            //client.Regist("alena", "alinovna", 1980,12,15);
+            //client.PaymentAc(30000, "+");
+            //client.PaymentAc(10000, "-");
+            //client.Rename("     gafur", "      tentovich");
+            //client.Rate();
+            //client.Info();
+            //client.InfoC();
+            //Console.WriteLine("  ");
+            //Employee emp = new Employee();
+            //emp.Regist("Muhamed","Ibragimov",1993,6,17);
+            //emp.Rename("   murat", "  absalov");
+            //emp.position = "Director";
+            //emp.Info();
+            //emp.InfoE();
 
 
             //string s = "I don`t understand";
@@ -52,9 +61,6 @@ namespace _335Labs
             //Console.WriteLine(Strings.RD(s));
             //Console.WriteLine(Strings.Paralendrom(s));
             //Console.WriteLine(Strings.TheSame(s));
-
-
-
 
 
             //Console.WriteLine(Methods.DivofInt(-5, 5, 10));
