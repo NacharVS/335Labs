@@ -56,6 +56,7 @@ namespace _335Labs.GirfanovaBakhmutova
             MathOneArray arrayone = Sort;
             arrayone = [1, 9, 15, 23, 0, 2, 8];
 
+            //arrayone = ([1, 9, 15, 23, 0, 2, 8]);
         }
     }
 }
