@@ -1,32 +1,24 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace _335Labs.Shagaviev_Barygin
 {
-    using System;
 
-    public class Client
+    class Person
     {
-        private string name;
-        private Client()
-        {
-
-        }
-        public Client(string n)
-        {
-            name = n;
-        }
-        public string Name
-        {
-            get { return name; }
+        public static void BK()
+        { 
+        
+        
         }
 
-        public override string ToString()
-        {
-            string re = String.Format("Client: {0}", this.name);
-            return re;
-        }
+
+       
 
     }
+
 }
+

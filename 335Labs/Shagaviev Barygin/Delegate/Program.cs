@@ -2,13 +2,13 @@
 using _335Labs.Shagaviev_Barygin;
 using System;
 
-namespace _335Labs.Shagaviev_Barygin.Delegate
+namespace _335Labs.Shagaviev_Barygin
 {
     class Program
     {
         static void Main(string[] args)
         {
-            SumTwoMas.STM();
+            Person.BK();
         }
     }
 }
