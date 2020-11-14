@@ -16,7 +16,7 @@ namespace _335Labs.Zagaynova
         private int _age;
 
 
-
+        
         public string Registration(string newName, string newSurname, int yy, int mm, int dd)
         {
             int aa = DateTime.Now.Year;
@@ -70,6 +70,17 @@ namespace _335Labs.Zagaynova
       {
             private double _paymentAccount;
             private static double _Stavka = 0.067;
+            private DateTime _accountOpenDate;
+            
+
+
+        public void RegistrAccount( double sum, int yy, int  mm, int dd)
+             {
+            _paymentAccount = sum;
+            _accountOpenDate = new DateTime(yy, mm, dd);
+            Console.WriteLine(_accountOpenDate);
+             }
+
 
             public double PaymentAc(int a, string s)
             //положить минимум 10 000
@@ -94,8 +105,14 @@ namespace _335Labs.Zagaynova
             
             public double Proc()
             {
+            DateTime datnow = DateTime.Now;
+            int year = datnow.Year - _accountOpenDate.Year;
+            int mounth = datnow.Month - _accountOpenDate.Month +  year * 12;
+             for (int i = 1; i <= mounth; i++)
+            {
                 _paymentAccount += _paymentAccount * _Stavka;
-                 return _paymentAccount;
+            }
+               return _paymentAccount;
             }
             public static void ReProc(double newProc)
             {
