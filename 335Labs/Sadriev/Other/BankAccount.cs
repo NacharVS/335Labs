@@ -6,16 +6,15 @@ using System.Threading;
 
 namespace _335Labs.Sadriev
 {
+    
     class Person
     {
         private  string _name;
         private  string _surname;
         private string _id;
         private int _age;
-
-
-
-        public string Regist(string newName, string newSurname, int year, int mouth, int day)
+        private string _phonenumber;
+        public string Regist(string newName, string newSurname,string phone, int year, int mouth, int day)
         {
             newName = newName.Trim();
             var FL= newName[0];
@@ -25,6 +24,7 @@ namespace _335Labs.Sadriev
             var fl = newSurname[0];
             var ol = newSurname.Remove(0, 1);
             _surname = fl.ToString().ToUpper() + ol.ToLower();
+            _phonenumber = phone;
             Random rnd = new Random();
             int a = rnd.Next(1, 100);
             _id = $"{a}";
@@ -32,7 +32,7 @@ namespace _335Labs.Sadriev
             DateTime d = new DateTime(year, mouth, day);
             _age = now -d.Year;
             if (d > DateTime.Now.AddYears(-_age)) Age--;
-            string akk = _id + " " + _surname + " " + _name + " " + _age;
+            string akk = _id + " " + _surname + " " + _name + " " + _age + " "+ _phonenumber;
             return akk;
         }
         public string Rename(string reName, string reSurname)
@@ -48,13 +48,12 @@ namespace _335Labs.Sadriev
             string reak = _id + " " + _surname + " " + _name;
             return reak;
         }
-
         public int Age
         {
             get
             {
                 if (_age > 14 & _age < 150)
-                    return _age;
+                return _age;
                 else Console.WriteLine("error");
                 return Age;
             }
@@ -65,46 +64,61 @@ namespace _335Labs.Sadriev
         }
         public void Info()
         {
-            string ii = _id + " " + " " + _surname + " " + _name;
+            string ii ="\n Id: " +  _id + " " + "\t Surname: " + _surname + "\t Name: " + _name + "\t Age: "+ _age +"\t Phone number:   "+_phonenumber;
             Console.WriteLine(ii);
         }
 
     }
     class Client : Person
     {
-        private static double _rate = 6.7;
-        private double _paymentAccount;
+        private static double _rate = 0.035;
+        private double _sum;
+        private DateTime _accountOpenningDate;
+        //public delegate void SumChanged
         public double PaymentAc(double a, string b)
         {
             if (b == "+")
             {
                 if (a < 10000) { Console.WriteLine("minimum  10000"); }
-                else _paymentAccount += +a;
+                else _sum += +a;
             }
             else if (b == "-")
             {
                 if (a > 200000) { Console.WriteLine("maximum  200000"); }
-                else _paymentAccount = _paymentAccount - a;
+                else _sum = _sum - a;
             }
-            return _paymentAccount;
+            return _sum;
         }
         public void PaymentAc()
         {
-            Console.WriteLine("payment:  " + _paymentAccount);
+            Console.WriteLine("payment:  " + _sum);
         }
         public void InfoC()
         {
-            string ii =  "Money:   " + _paymentAccount;
+            string ii = "Money:   " + _sum;
             Console.WriteLine(ii);
         }
         public double Rate()
         {
-            _paymentAccount += _paymentAccount * _rate / 100;
-            return _paymentAccount;
+            _sum += _sum * _rate / 100;
+            return _sum;
         }
         public static void Rerate(double rerate)
         {
             _rate = rerate;
+        }
+        public void AcRegist(double sum, int yy, int mm, int dd)
+        {
+           
+
+
+
+        }
+        public void Showprofit()
+        { 
+            
+
+
         }
     }
     class Employee : Person
@@ -122,7 +136,6 @@ namespace _335Labs.Sadriev
             string ii = "Position: " + _position;
             Console.WriteLine(ii);
         }
-    
     }
 
 }
