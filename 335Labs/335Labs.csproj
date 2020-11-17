@@ -6,4 +6,8 @@
     <RootNamespace>_335Labs</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Stripe.net" Version="39.19.0" />
+  </ItemGroup>
+
 </Project>
