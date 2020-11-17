@@ -42,7 +42,7 @@ namespace _335Labs.Gilmutdinov
             _lastname = firstLetterr.ToString().ToUpper() + otherLetterrs;
             Console.WriteLine($"Name: {_name}");
             Console.WriteLine($"Last Name: { _lastname}");
-            Console.WriteLine($"#ID: {a}");
+          
 
 
         }
@@ -65,11 +65,7 @@ namespace _335Labs.Gilmutdinov
         {
             Console.WriteLine("payment:" + _paymentAccount);
         }
-        public void Info()
-        {
-            string Info = _id + "_" + _lastname + "_" + _name + "_" + _paymentAccount;
-            Console.WriteLine(Info);
-        }
+        
         public int Age
         {
             get
@@ -86,11 +82,65 @@ namespace _335Labs.Gilmutdinov
         }
         public void Info()
         {
-            string ii = _id + " " + " " + _surname + " " + _name;
+            string ii = _id + " " + " " + _lastname + " " + _name;
             Console.WriteLine(ii);
         }
 
     }
-        
+    class Client : Person
+    {
+        private static double _rate = 6.7;
+        private double _paymentAccount;
+        public double PaymentAc(double a, string b)
+        {
+            if (b == "+")
+            {
+                if (a < 10000) { Console.WriteLine("minimum  10000"); }
+                else _paymentAccount += +a;
+            }
+            else if (b == "-")
+            {
+                if (a > 200000) { Console.WriteLine("maximum  200000"); }
+                else _paymentAccount = _paymentAccount - a;
+            }
+            return _paymentAccount;
+        }
+        public void PaymentAc()
+        {
+            Console.WriteLine("payment:  " + _paymentAccount);
+        }
+        public void InfoC()
+        {
+            string ii = "Money:   " + _paymentAccount;
+            Console.WriteLine(ii);
+        }
+        public double Rate()
+        {
+            _paymentAccount += _paymentAccount * _rate / 100;
+            return _paymentAccount;
+        }
+        public static void Rerate(double rerate)
+        {
+            _rate = rerate;
+        }
+    }
+    class Employee : Person
+    {
+        private string _position;
+        public string position
+        {
+            get
+            { return _position; }
+            set
+            { _position = value; }
+        }
+        public void InfoE()
+        {
+            string ii = "Position: " + _position;
+            Console.WriteLine(ii);
+        }
+
+    }
+
 }
 
