@@ -78,7 +78,6 @@ namespace _335Labs.Zagaynova
              {
             _paymentAccount = sum;
             _accountOpenDate = new DateTime(yy, mm, dd);
-            Console.WriteLine(_accountOpenDate);
              }
 
 
