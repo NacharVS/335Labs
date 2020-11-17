@@ -11,6 +11,7 @@ namespace _335Labs.Gilmutdinov
         private string _lastname;
         private string _id;
         private double _paymentAccount;
+        private int _age;
 
         public void Account(string newName, string newLastname)
         {
@@ -39,12 +40,11 @@ namespace _335Labs.Gilmutdinov
             var firstLetterr = reLastname[0];
             var otherLetterrs = reLastname.Remove(0, 1);
             _lastname = firstLetterr.ToString().ToUpper() + otherLetterrs;
-            Random rnd = new Random();
-            int a = rnd.Next(888, 88888888);
-            _id = $"{a}";
             Console.WriteLine($"Name: {_name}");
             Console.WriteLine($"Last Name: { _lastname}");
             Console.WriteLine($"#ID: {a}");
+
+
         }
         public double PaymentAccount(double a, string b)
         {
@@ -70,6 +70,27 @@ namespace _335Labs.Gilmutdinov
             string Info = _id + "_" + _lastname + "_" + _name + "_" + _paymentAccount;
             Console.WriteLine(Info);
         }
+        public int Age
+        {
+            get
+            {
+                if (_age > 14 & _age < 150)
+                    return _age;
+                else Console.WriteLine("error");
+                return Age;
+            }
+            set
+            {
+                _age = value;
+            }
+        }
+        public void Info()
+        {
+            string ii = _id + " " + " " + _surname + " " + _name;
+            Console.WriteLine(ii);
+        }
+
     }
+        
 }
 
