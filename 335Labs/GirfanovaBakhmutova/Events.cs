@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _335Labs.GirfanovaBakhmutova
 {
-    class Events
+   public class Events
     {
        
     }

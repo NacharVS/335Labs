@@ -6,6 +6,10 @@ namespace _335Labs.GirfanovaBakhmutova
 {
     class BankAccount
     {
+        BankAccount acc1 = new BankAccount(0, "+79150346722");
+        acc1.RateChangingEvent +=RateChangingNotify;
+      //  acc1.Deposit();
+
         public delegate void SumChanging(string phnumber, int sum);
         public delegate void RateChanging(double OldRate, double NewRate);
         private int _sum;
@@ -59,6 +63,19 @@ namespace _335Labs.GirfanovaBakhmutova
         {
             Sum += sum;
         }
-        // public void Widthraw(int sum) {}
+        public void Widthraw(int sum) 
+        {
+
+        }
+
+        public static void MessageSending(string phnumber, int sum)
+        {
+            Console.WriteLine($"Message sent at {phnumber}");
+        }
+
+        public static void AccountState(string phnumber, int sum)
+        {
+
+        }
     }
 }
