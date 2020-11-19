@@ -5,24 +5,9 @@ namespace _335Labs.Sadriev.Delegates
 {
     class Program
     {
-      
+        
         static void Main(string[] args)
         {
-            Client client = new Client();
-            client.Regist("alena", "alinovna","79991678862", 1980, 12, 15);
-            client.PaymentAc(30000, "+");
-            client.PaymentAc(10000, "-");
-            client.Rename("     gafur", "      tentovich");
-            client.Rate();
-            client.Info();
-            client.InfoC();
-            Console.WriteLine("  ");
-            Employee emp = new Employee();
-            emp.Regist("Muhamed", "Ibragimov","78965645643", 1993, 6, 17);
-            emp.Rename("   murat", "  absalov");
-            emp.position = "Director";
-            emp.Info();
-            emp.InfoE();
 
 
 
@@ -35,6 +20,14 @@ namespace _335Labs.Sadriev.Delegates
 
 
 
+
+
+            //Client client = new Client();
+            //client.Regist("alena", "alinovna", "79991678862", 1980, 12, 15);
+            //client.Info();
+            //client.AcRegist(10000);
+            //client.PaymentAc(30000, "+");
+            //client.Showprofit();
 
             //int[] array = { 1, 2, 43, 76, 12 };
             //int[] array1 = { 12, 645, 12, 65, 51};
