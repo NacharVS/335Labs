@@ -8,18 +8,14 @@ namespace _335Labs.Khabibrakhmanov
     {
         static void Main(string[] args)
         {
-            public static void Main(string[] args)
-            {
-                int[] myArray = new int[10];
-                Random rand = new Random();
+            List<Farmer> AuthorList = new List<Farmer>();
 
-                for (int x = 0; x < myArray.Length; x++)
-                {
-                    myArray[x] = rand.Next(20);
-                    Console.WriteLine("Значение элемента массива " + x + " = " + myArray[x]);
-                }
-            }
-
+            FarmerList.Add(new Farmer("Mahesh Chand", 35, "A Prorammer's Guide to ADO.NET", true, new DateTime(2003, 7, 10)));
+            FarmerList.Add(new Farmer("Neel Beniwal", 18, "Graphics Development with C#", false, new DateTime(2010, 2, 22)));
+            FarmerList.Add(new Farmer("Praveen Kumar", 28, "Mastering WCF", true, new DateTime(2012, 01, 01)));
+            FarmerList.Add(new Farmer("Mahesh Chand", 35, "Graphics Programming with GDI+", true, new DateTime(2008, 01, 20)));
+            FarmerList.Add(new Farmer("Raj Kumar", 30, "Building Creative Systems", false, new DateTime(2011, 6, 3)));
+           
         }
     }
 }
