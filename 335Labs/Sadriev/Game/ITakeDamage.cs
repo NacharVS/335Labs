@@ -4,9 +4,8 @@ using System.Text;
 
 namespace _335Labs.Sadriev.Game
 {
-
-    //Хорошие
-    class People
+    interface ITakeDamage
     {
+        void TakeADamage(Heroes heroes);
     }
 }

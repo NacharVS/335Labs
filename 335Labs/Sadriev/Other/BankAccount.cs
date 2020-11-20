@@ -6,8 +6,23 @@ using System.Threading;
 
 namespace _335Labs.Sadriev
 {
-    
-    class Person
+    //Client client = new Client();
+    //client.Regist("alena", "alinovna", "79991678862", 1980, 12, 15);
+    //client.Info();
+    //client.AcRegist(10000);
+    //client.PaymentAc(30000, "+");
+    //client.Showprofit();
+
+    //int[] array = { 1, 2, 43, 76, 12 };
+    //int[] array1 = { 12, 645, 12, 65, 51};
+    //Branchs.DuoMassiv test2;
+    //test2 = General.DuoSum;
+    //test2 = General.DuoMult;
+    //test2(array, array1);
+    //Branchs.SoloMassiv test1;
+    //test1 = General.Max;
+    //test1(array);
+    abstract class Person
     {
         private  string _name;
         private  string _surname;
@@ -67,6 +82,7 @@ namespace _335Labs.Sadriev
             string ii ="\n Id: " +  _id + " " + "\t Surname: " + _surname + "\t Name: " + _name + "\t Age: "+ _age +"\t Phone number:   "+_phonenumber;
             Console.WriteLine(ii);
         }
+        
 
     }
     class Client : Person
@@ -74,7 +90,9 @@ namespace _335Labs.Sadriev
         private static double _rate = 0.035;
         private double _sum;
         private DateTime _accountOpenningDate;
-        //public delegate void SumChanged
+        public delegate void SumChanged(string message);
+        public event SumChanged SumchangedEvent;
+        
         public double PaymentAc(double a, string b)
         {
             if (b == "+")
@@ -89,9 +107,16 @@ namespace _335Labs.Sadriev
             }
             return _sum;
         }
-        public void PaymentAc()
+        public double Summa
         {
-            Console.WriteLine("payment:  " + _sum);
+            get
+            {
+                { return _sum; }        
+            }
+            private set
+            { _sum = value;
+                SumchangedEvent?.Invoke("Money in the ac:");     
+            }
         }
         public void InfoC()
         {
@@ -107,18 +132,24 @@ namespace _335Labs.Sadriev
         {
             _rate = rerate;
         }
-        public void AcRegist(double sum, int yy, int mm, int dd)
+        public void AcRegist(double sum)
         {
-           
-
-
-
+            _sum = sum;
+            _accountOpenningDate =DateTime.Now;
         }
         public void Showprofit()
-        { 
-            
-
-
+        {
+            for (int d = 2; d > 0; ) 
+            {
+                int raz = DateTime.Now.Second - _accountOpenningDate.Second;
+                if (d == raz)
+                {
+                    Summa += Summa * _rate;
+                    d += 2;
+                    Thread.Sleep(5000);
+                    Console.WriteLine(Summa);
+                }
+            }  
         }
     }
     class Employee : Person
