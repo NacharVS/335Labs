@@ -8,9 +8,18 @@ namespace _335Labs.GirfanovaBakhmutova.Stratege
     {
         public interface IStrategy
         {
-            public double speed { get; set; }
-                void Move(double speed);
+            public double speed 
+            {
+                
+                get => _speed;
+                set => _speed = value;
+            }
+                void Move(double speed)
+                {
+                     Console.WriteLine($"Plane moving with {_speed} km/h");
+                }
         }
+
     }
 
     public abstract class Capabilities

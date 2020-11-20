@@ -11,15 +11,19 @@ namespace _335Labs.GirfanovaBakhmutova.Stratege
         {
             public double Speed
             {
-
+                 get => throw new NotImplementedException();
+                 set => throw new NotImplementedException(); 
+               
             }
-            public void Move(double speed)
-            {
-
-            }
+        }
+        public void Move(double speed)
+        {
+            //throw new NotImplementedException();
+          
         }
 
     }
+    
 }
 
 //интерфейс стратегии 

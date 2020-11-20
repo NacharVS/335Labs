@@ -10,10 +10,13 @@ namespace _335Labs.GirfanovaBakhmutova
     {
         static void Main(string[] args)
         {
-
+        public double speed { get; set; }
+        void Move(double speed); 
         }
-
     }
 }
+
+    
+
     
 
