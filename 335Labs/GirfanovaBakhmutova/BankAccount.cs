@@ -79,3 +79,5 @@ namespace _335Labs.GirfanovaBakhmutova
         }
     }
 }
+
+//https://stackoverflow.com/questions/54244287/tuple-must-contain-at-least-two-elements

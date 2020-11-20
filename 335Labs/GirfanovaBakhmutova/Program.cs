@@ -3,6 +3,10 @@
 //using static _335Labs.Girfanova.MathMetodsGirf;
 //using static _335Labs.GirfanovaBakhmutova.General;
 
+//using static _335Labs.GirfanovaBakhmutova.Stratege.Interfaces;
+//using static _335Labs.GirfanovaBakhmutova.Stratege.Character;
+//using static _335Labs.GirfanovaBakhmutova.Stratege.Plane;
+//using static _335Labs.GirfanovaBakhmutova.Stratege.Game;
 
 namespace _335Labs.GirfanovaBakhmutova
 {
@@ -10,8 +14,7 @@ namespace _335Labs.GirfanovaBakhmutova
     {
         static void Main(string[] args)
         {
-        public double speed { get; set; }
-        void Move(double speed); 
+        
         }
     }
 }
