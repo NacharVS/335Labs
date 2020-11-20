@@ -17,24 +17,24 @@ namespace _335Labs.Shagaviev_Barygin
             _sum = sum;
             _phoneNumber = phoneNumber;
         }
-        public int Sum
+        public void Sum()
         {
 
         }
         public void Deposit(int sum)
         {
-            Sum +=;
+            sum += ;
         }
 
         public void Withdraw(int sum)
         {
-            Sum -= sum;
+            sum -= sum;
         }
         public void ShowProfit(DateTime timeNow)
         {
             _sum += _sum * _rate;
         }
-        public static void RateChanged(double newRate)
+        public static void RateChangedd(double newRate)
         {
             _rate = newRate;
         }
