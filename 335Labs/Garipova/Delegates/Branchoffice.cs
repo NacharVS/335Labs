@@ -13,7 +13,7 @@ namespace _335Labs.Garipova.Delegates
             int n, summa = 0;
             Random rnd = new Random();
             Console.WriteLine("find the dimension");
-            double n = double.Parse(Console.ReadLine());
+            _ = double.Parse(Console.ReadLine());
             int[,] a = new int[n, n];
             for (int i = 0; i < n; i++)
             {

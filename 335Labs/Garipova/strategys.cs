@@ -4,7 +4,23 @@ using System.Text;
 
 namespace _335Labs.Garipova
 {
-    class strategys
+    class Strategys
     {
+        static void Main(string[] args)
+        {
+            player movableobject;
+            movableobject = new player();
+            movableobject.Energy = 100;
+            movableobject.Move();
+
+        }
     }
+
 }
+
+
+
+
+
+
+

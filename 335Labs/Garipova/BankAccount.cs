@@ -33,6 +33,9 @@ namespace _335Labs.Garipova
         {
             BankAccount acc1 = new BankAccount(0, "+79385635564");
             acc1.Deposit(100);
+            MessageSending(acc1._phoneNumber, acc1._sum);
+            AccountCondition(acc1._phoneNumber, acc1._sum);
+
         }
 
         public static void MessageSending(string phoneNumber, int sum)
@@ -77,8 +80,9 @@ namespace _335Labs.Garipova
         public void PrintInfo()
         {
             Console.WriteLine($"{_name} {_surname} {_id} {_paymentAccount}");
+            Console.WriteLine($"{_rate}");
         }
-        private static void Main(string[] args)
+        private static void Main1(string[] args)
         {
             int a = DateTime.Now.Year;
             DateTime dayofbrith = new DateTime(16, 11, 1999);
@@ -86,6 +90,6 @@ namespace _335Labs.Garipova
 
 
 
-       }
-
+        }
+    }
 }

@@ -12,11 +12,11 @@ namespace _335Labs.Garipova
         {
 
             Console.WriteLine("Odd characters");
-            
+
             for (int i = 0; i < s.Length; i++)
             {
                 if (s[i] == ' ') continue;
-                if (i%2==0)
+                if (i % 2 == 0)
                     Console.WriteLine(s[i]);
             }
             Console.WriteLine();
@@ -27,14 +27,14 @@ namespace _335Labs.Garipova
             {
                 if (s[i] == ' ') continue;
 
-                if (i % 2 ! = 0)
+                if (i % 2 == 0)
                     Console.WriteLine(s[i]);
             }
 
         }
 
 
-        public static void countwords (string s)
+        public static void countwords(string s)
         {
             string[] words = s.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             Console.WriteLine($"Count of words per line = { words.Length}");
@@ -47,7 +47,7 @@ namespace _335Labs.Garipova
 
             s = s.Replace(" ", "");
             int count = 0;
-            for (int i =0; i <s.Length; i++)
+            for (int i = 0; i < s.Length; i++)
             {
                 if (s[i] == s[s.Length - 1 - i])
                     count += 1;
@@ -60,7 +60,5 @@ namespace _335Labs.Garipova
         }
 
     }
-
-   
 
 }
