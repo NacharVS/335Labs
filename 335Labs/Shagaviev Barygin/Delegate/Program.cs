@@ -6,9 +6,9 @@ namespace _335Labs.Shagaviev_Barygin
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Person.BK();
-        }
+       // static "void" "Main"(string[] args)
+       // {
+          //  Person.BK();
+       // }
     }
 }

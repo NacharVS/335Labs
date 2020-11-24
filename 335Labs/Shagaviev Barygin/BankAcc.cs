@@ -10,7 +10,7 @@ namespace _335Labs.Shagaviev_Barygin
         public delegate void RateChanged(double oldRate, double newRate);
         private double _sum;
         private static double _rate = 0.35;
-        private DateTime _accountOpenDate;
+        //private DateTime _accountOpenDate;
         private String _phoneNumber;
         public BankAcc(int sum, string phoneNumber)
         {
