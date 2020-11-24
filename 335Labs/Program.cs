@@ -33,7 +33,7 @@ namespace ConsoleApp20
             for (int i = 0; i < sum.GetLength(0); i++) 
             {
                 Console.WriteLine(sum[i]);
-            }
+            }w
         }
     }
 }
