@@ -12,13 +12,14 @@ namespace _335Labs.Khabibrakhmanov.StrongholdKingdoom
         private bool mvp;
         private DateTime pubdate;
 
-        public Farmer(string name, short age, string title, bool mvp, DateTime pubdate)
+        public void Farmer(string name, short age, string title, bool mvp, DateTime pubdate)
         {
             this.name = name;
             this.age = age;
             this.title = title;
             this.mvp = mvp;
             this.pubdate = pubdate;
+            return;
         }
 
         public string Name
@@ -48,10 +49,11 @@ namespace _335Labs.Khabibrakhmanov.StrongholdKingdoom
             set { pubdate = value; }
         }
                
-            foreach (var author in FarmerList)
+            public (string author in FarmerLIst)
             {
                 Console.WriteLine("Author: {0},{1},{2},{3},{4}", author.Name, author.Age, author.BookTitle, author.IsMVP, author.PublishedDate);
             }
+    }
 }
-}
+
 
