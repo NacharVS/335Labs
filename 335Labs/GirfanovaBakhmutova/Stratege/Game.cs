@@ -26,10 +26,10 @@ namespace _335Labs.GirfanovaBakhmutova.Stratege
 
         public abstract class Capabilities : IStrategy
         {
-            Planes plane = new Planes(4, "Volvo", new PetrolMove());
-            Plane1.Move();
-        Plane.Movable = new ElectricMove();
-            Plane.Move();
+       //     Planes plane = new Planes(4, "Volvo", new PetrolMove());
+       //     Planes.Move();
+       // Plane.Movable = new ElectricMove();
+       //     Plane.Move();
  
       //  Console.ReadLine(); //https://metanit.com/sharp/tutorial/2.15.php
     }
@@ -78,3 +78,8 @@ namespace _335Labs.GirfanovaBakhmutova.Stratege
 //refactoring.guru/ru/design-patterns/template-method/csharp/example
 //refactoring.guru/ru/design-patterns/strategy/csharp/example
 //metanit.com/sharp/patterns/3.1.php
+//ru.wikipedia.org/wiki/Boeing_737
+
+//www.cyberforum.ru/delphi-beginners/thread1474458.html
+//bool.dev/blog/detail/pattern-strategiya-strategy !!!!!!!!!!!!!!!!!
+//c-sharp.pro/?p=886 разбор
