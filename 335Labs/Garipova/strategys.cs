@@ -8,8 +8,8 @@ namespace _335Labs.Garipova
     {
         static void Main(string[] args)
         {
-            player movableobject;
-            movableobject = new player();
+            plane movableobject;
+            movableobject = new plane();
             movableobject.Energy = 100;
             movableobject.Move();
 
