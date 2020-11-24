@@ -14,6 +14,36 @@ namespace _335Labs.Garipova
             movableobject.Move();
 
         }
+        public double energy
+        {
+            get => throw new NotImplementedException();
+            set => throw new NotImplementedException();
+
+        }
+        public interface game
+        {
+            public void Potentials();
+
+
+        }
+        public void Move(double energy)
+        {
+            Console.WriteLine($"if there are obstacles ahead, turn left ");
+        }
+        public abstract class Potentials : Strategys
+        {
+            plane Planes = new plane();
+
+        }
+        interface game1
+        {
+            void Move();
+        }
+        class plane1
+        {
+            protected int players;
+            protected string weapons; //оружие
+        }
     }
 
 }
