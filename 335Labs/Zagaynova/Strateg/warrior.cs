@@ -17,5 +17,17 @@ namespace _335Labs.Zagaynova
         public int Speed { get => _speed; set => _speed = 7; }
         public string Way { get => _way; set => _way = "On foot"; }
 
+
+        public void Attack()
+        {
+            if (_health >= 0)
+            {
+                Console.WriteLine($"warrior{_name} attacks. Weapon{_weapon}");
+            }
+            else
+            {
+                Console.WriteLine($"life os over");
+            }
+        }
     }
 }

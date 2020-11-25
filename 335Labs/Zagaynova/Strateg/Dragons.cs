@@ -21,7 +21,17 @@ namespace _335Labs.Zagaynova
         public int Speed { get => _speed; set => _speed = value; }
         public string Way { get => _way; set => _way = "wings"; }
 
-        
+        public void Attack()
+        { if (_health>=0)
+            {
+                Console.WriteLine($"Dragons {_name} attacks  Weapon - {_weapon}");
+            }   
+            else
+            {
+                Console.WriteLine($"life os over");  
+            }
+        }
+
          
 	 
 
