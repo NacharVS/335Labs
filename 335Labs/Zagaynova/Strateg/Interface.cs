@@ -4,11 +4,12 @@ using System.Text;
 
 namespace _335Labs.Zagaynova
 {
-      
-     public interface IObch
-      {string Name { get; set; }
+
+    public interface IObch
+    {
+        string Name { get; set; }
         int Health { get; set; }
-      }
+    }
     
     public interface Iformov
     { int Speed { get; set; }
@@ -22,7 +23,7 @@ namespace _335Labs.Zagaynova
     {string Weapon  { get; set; }
     }
 
-
+  
 
 
 
