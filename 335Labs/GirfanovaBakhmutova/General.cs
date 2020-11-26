@@ -6,17 +6,17 @@ namespace _335Labs.GirfanovaBakhmutova
     public static class General
     {
         public delegate void MathOneArray(Array val);
-        public static void Sort(Array val) 
+        public static void Sort(Array val)
         {
             Array.Sort(val);
             Console.WriteLine(val);
         }
-        public static int Summary(int[] val) 
+        public static int Summary(int[] val)
         {
             int sum = 0;
             foreach (int value in val)
                 sum += value;
-            return sum; 
+            return sum;
         }
         private static void MaxValue(int[] val)
         {
@@ -28,12 +28,12 @@ namespace _335Labs.GirfanovaBakhmutova
             int[] Arr3 = new int[0];
             for (int r = 0; r < Arr1.Length; ++r)
             {
-                Arr3 [r] = Arr1[r] + Arr2[r];
+                Arr3[r] = Arr1[r] + Arr2[r];
             }
         }
         public static void ArraysSub(int[] Arr1, int[] Arr2)
         {
-            int[] Arr3 = new int [0];
+            int[] Arr3 = new int[0];
             for (int r = 0; r < Arr1.Length; ++r)
             {
                 Arr3[r] = Arr1[r] - Arr2[r];

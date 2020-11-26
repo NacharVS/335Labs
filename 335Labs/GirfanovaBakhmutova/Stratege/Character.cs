@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using static _335Labs.GirfanovaBakhmutova.Stratege.Game;
+using static _335Labs.GirfanovaBakhmutova.Stratege.Character;
 using static _335Labs.GirfanovaBakhmutova.Stratege.Interfaces;
 using static _335Labs.GirfanovaBakhmutova.Stratege.Plane;
-using static _335Labs.GirfanovaBakhmutova.Stratege.Character;
 
 namespace _335Labs.GirfanovaBakhmutova.Stratege
 {

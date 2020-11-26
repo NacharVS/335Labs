@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _335Labs.GirfanovaBakhmutova
+﻿namespace _335Labs.GirfanovaBakhmutova
 {
     class StringMetods
     {
-        
-        
+
+
 
     }
 }

@@ -28,11 +28,11 @@ namespace _335Labs.Girfanova
         public static void EvenOdd(string str)
         {
             int l = 0;
-            char[] even = {};
-            char[] odd = {};
-            for (int m = 0; str.Length>=m; m++)
+            char[] even = { };
+            char[] odd = { };
+            for (int m = 0; str.Length >= m; m++)
             {
-                
+
                 if (m % 2 == 0)
                 {
                     char x = str[m];
