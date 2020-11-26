@@ -4,8 +4,8 @@ using System.Text;
 
 namespace _335Labs.Sadriev.Game
 {
-    //Плохие
-    class Goblins
+    interface IGiveMessage
     {
+        void  GiveAMessage(Heroes heroes, Heroes hero);
     }
 }

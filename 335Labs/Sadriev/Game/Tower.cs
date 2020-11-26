@@ -6,10 +6,7 @@ namespace _335Labs.Sadriev.Game
 {
     class Tower : Heroes, IDefeatHero
     {
-        public Tower(int power,
-           int vision,
-           int health
-           ) : base(power, vision, health)
+        public Tower(int power, int vision, int health ) : base(power, vision, health)
         {
 
         }

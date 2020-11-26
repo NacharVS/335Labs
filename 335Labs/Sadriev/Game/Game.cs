@@ -11,12 +11,12 @@ namespace _335Labs.Sadriev.Game
         private readonly int attakerCounter;
         private readonly int defenderCounter;
         
-        private Heroes[] heroes = new Heroes[6];
+        private Heroes[] heroes = new Heroes[10];
         internal Heroes[] Team { get => heroes; set => heroes = value; }
 
         public Game(string team, params Heroes[] heroes) //создание команды героев для игроков
         {
-            if (heroes.Length <= 6)
+            if (heroes.Length <= 10)
             {
                 for (int i = 0; i < heroes.Length; i++)
                 {
@@ -39,7 +39,7 @@ namespace _335Labs.Sadriev.Game
                 }
                 Console.WriteLine($"Команда {team} сформирована:");
                 Console.WriteLine("");
-                if (towerCounter == 1 && attakerCounter == 5 && defenderCounter == 5 )
+                if (towerCounter == 1 && attakerCounter >= 5 && defenderCounter >=0 )
                 {
                     for (int i = 0; i < heroes.Length; i++)
                     {

@@ -52,7 +52,7 @@ namespace _335Labs.Sadriev.Game
             {
                 if (heroes.dead == false)
                 {
-                    if (heroes.Vision < Vision) //если осведомленность героя выше, чем у оппонента
+                    if (heroes.Vision < Vision) //если вижн героя выше, чем у оппонента
                     {
                         if (heroes.Health > Power)
                         {
@@ -64,7 +64,7 @@ namespace _335Labs.Sadriev.Game
                             Console.WriteLine("'Мне запрещено уничтожать героев'\n");
                         }
                     }
-                    else if (heroes.Vision > Vision)//если осведомленность оппонента выше, чем у героя
+                    else if (heroes.Vision > Vision)//если осведомленность вижн выше, чем у героя
                     {
                         if (Health > Power)
                         {
@@ -86,7 +86,7 @@ namespace _335Labs.Sadriev.Game
                         }
                         else
                         {
-                            Console.WriteLine("Мы живы\n");
+                            Console.WriteLine("Опонент убит,мы живы\n");
                         }
                     }
                 }

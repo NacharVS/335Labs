@@ -6,10 +6,7 @@ namespace _335Labs.Sadriev.Game
 {
     class Defender : Heroes, IHealTeam
     {
-        public Defender(int power,
-            int vision,
-            int health
-            ) : base(power, vision, health)
+        public Defender(int power,int vision,int health ) : base(power, vision, health)
         {
 
         }
