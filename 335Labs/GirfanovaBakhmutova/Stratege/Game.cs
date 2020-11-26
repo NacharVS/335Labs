@@ -24,40 +24,41 @@ namespace _335Labs.GirfanovaBakhmutova.Stratege
             throw new NotImplementedException();
         }
 
+        class PlaneSpeed : IMovable
+        {
+            public void Move()
+            {
+                Console.WriteLine("Перемещение со скоростью");
+            }
+        }
+
         public abstract class Capabilities : IStrategy
         {
-       //     Planes plane = new Planes(4, "Volvo", new PetrolMove());
-       //     Planes.Move();
-       // Plane.Movable = new ElectricMove();
-       //     Plane.Move();
+            Planes plane = new Planes(1, "Boeing-777", new PlaneSpeed());
+            Planes.Move();
+        Planes.Movable = new Boeing();
+            Planes.Move();
  
-      //  Console.ReadLine(); //https://metanit.com/sharp/tutorial/2.15.php
+        Console.ReadLine(); 
     }
         interface IMovable
         {
             void Move();
         }
 
-        class PetrolMove : IMovable
-        {
-            public void Move()
-            {
-                Console.WriteLine("Перемещение на бензине");
-            }
-        }
+       
 
-        class ElectricMove : IMovable
+        class Boeing : IMovable
         {
             public void Move()
             {
-                Console.WriteLine("Перемещение на электричестве");
+                Console.WriteLine("Тип самолета");
             }
         }
         class Plane1
         {
-            protected int passengers; // кол-во пассажиров
-            protected string model; // модель самолета
-
+            protected int passengers; // кол-во мест
+            protected int model;
             public Plane1(int num, string model, IMovable mov)
             {
                 this.passengers = num;
@@ -83,3 +84,5 @@ namespace _335Labs.GirfanovaBakhmutova.Stratege
 //www.cyberforum.ru/delphi-beginners/thread1474458.html
 //bool.dev/blog/detail/pattern-strategiya-strategy !!!!!!!!!!!!!!!!!
 //c-sharp.pro/?p=886 разбор
+
+//https://metanit.com/sharp/tutorial/2.15.php
