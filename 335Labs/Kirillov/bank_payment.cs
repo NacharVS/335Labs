@@ -39,11 +39,26 @@ using System.Text;
             Console.WriteLine($"Имя: {_name} Фамилия: {_lastname} Название банка: {_bankname}");
             Console.WriteLine($"ID сессии: {_id}");
         }
-        
-        public void Account_payment(double dollar)
+
+    public void Account_payment(string a, int b)
+    {
+        Console.WriteLine(DateTime.Now);
+        if (a == "положить")
         {
-            Console.WriteLine(DateTime.Now);
-            
+            if (b < 10000)
+            {
+                Console.WriteLine("Минимальное пополнение - 10000 рублей");
+            }
         }
+
+        if (a == "снять")
+        {
+            if (b < 200000)
+            {
+                Console.WriteLine("Минимальное снятие - 200000 рублей");
+            }
+        }
+    }
+        
     }
     
