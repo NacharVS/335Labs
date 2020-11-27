@@ -7,8 +7,8 @@ namespace _335Labs.Shagaviev_Barygin.GAME
     class каменьножницыбумага
     {
         public static void игрушка()
-        {
-            string[] combs = { "Камень", "Ножницы", "Бумага" };
+        {  Console.WriteLine("медведь побеждает ниндзю, ниндзя побеждает охотника, а охотник — медведя")
+            string[] combs = { "Медведь", "Ниндзя", "Охотник" };
             Random random = new Random();
             do
             {
