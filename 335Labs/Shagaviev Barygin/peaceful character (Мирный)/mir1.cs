@@ -20,13 +20,12 @@ namespace _335Labs.Shagaviev_Barygin.peaceful_character__Мирный_
             var canUse = myChar.heroClass == dragonBow.heroClass;
             Console.WriteLine(canUse);
         }
-        public enum HeroClass
-
+        public enum HeroClass 
         {
             Archer,
-            //Mage,  здесь ошибка где-то
-            //Healer,
-            //Warrior
+            Mage,  
+            Healer,
+            Warrior
         }
         class Hero
         {
