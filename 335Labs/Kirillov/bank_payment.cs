@@ -4,13 +4,14 @@ using System.Text;
 
     class bank_acc
     {
-        public string _name;
-        public string _lastname;
-        public string _id;
-        public string _bankname;
+        private string _name;
+        private string _lastname;
+        private string _id;
+        private string _bankname;
 
-        public void Bank_account_access(string newn, string newsur, string bankn)
+        public void Registration(string newn, string newsur, string bankn)
         {
+            Console.WriteLine(DateTime.Now);
             //Имя
             newn = newn.Trim();
             var first = newn[0];
@@ -31,8 +32,18 @@ using System.Text;
             var four = bankn.Remove(0, 1);
             _bankname = three.ToString().ToUpper() + four;
 
+           
+        }
+        public void Account_info()
+        {
             Console.WriteLine($"Имя: {_name} Фамилия: {_lastname} Название банка: {_bankname}");
-            Console.WriteLine($"ID сессии: {id}");
+            Console.WriteLine($"ID сессии: {_id}");
+        }
+        
+        public void Account_payment(double dollar)
+        {
+            Console.WriteLine(DateTime.Now);
+            
         }
     }
     

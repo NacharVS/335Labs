@@ -16,7 +16,8 @@ namespace _335Labs.Kirillov
             string bankn = Console.ReadLine();
 
             bank_acc bankacc = new bank_acc();
-            bankacc.Bank_account_access(newn, newsur, bankn);
+            bankacc.Registration(newn, newsur, bankn);
+            bankacc.Account_info();
 
         }
     }
