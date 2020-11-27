@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _335Labs.Gilmutdinov
 {
-    class Bank
+    class Person
     {
 
         private string _name;
@@ -136,8 +136,8 @@ namespace _335Labs.Gilmutdinov
         }
         public void InfoE()
         {
-            string ii = "Position: " + _position;
-            Console.WriteLine(ii);
+            string I = "Position: " + _position;
+            Console.WriteLine(I);
         }
 
     }
