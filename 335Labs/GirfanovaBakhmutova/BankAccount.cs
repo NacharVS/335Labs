@@ -5,11 +5,7 @@ namespace _335Labs.GirfanovaBakhmutova
     class BankAccount
     {
         BankAccount acc1 = new BankAccount(0, "+79150346722");
-#pragma warning disable CS1519 // Недопустимый токен ";" в объявлении класса, структуры или члена интерфейса.
-#pragma warning disable CS1519 // Недопустимый токен "+=" в объявлении класса, структуры или члена интерфейса.
-        acc1.RateChangingEvent +=RateChangingNotify;
-#pragma warning restore CS1519 // Недопустимый токен "+=" в объявлении класса, структуры или члена интерфейса.
-#pragma warning restore CS1519 // Недопустимый токен ";" в объявлении класса, структуры или члена интерфейса.
+       // acc1.RateChangingEvent +=RateChangingNotify;
       //  acc1.Deposit();
 
         public delegate void SumChanging(string phnumber, int sum);

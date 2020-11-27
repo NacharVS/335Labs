@@ -62,7 +62,7 @@ namespace _335Labs.GirfanovaBakhmutova.Stratege
     }
 }
 
-//www.aviakassa.com/airplanes
+
 //bool.dev/blog/detail/pattern-strategiya-strategy
 //refactoring.guru/ru/design-patterns/template-method/csharp/example
 //refactoring.guru/ru/design-patterns/strategy/csharp/example
