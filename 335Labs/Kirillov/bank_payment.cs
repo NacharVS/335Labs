@@ -11,7 +11,7 @@ using System.Text;
 
         public void Registration(string newn, string newsur, string bankn)
         {
-            Console.WriteLine(DateTime.Now);
+
             //Имя
             newn = newn.Trim();
             var first = newn[0];
@@ -24,7 +24,7 @@ using System.Text;
             _lastname = firstt.ToString().ToUpper() + secondd;
             //Рандомный id сессии
             Random rnd = new Random();
-            int  id = rnd.Next(888, 88888888);
+            int  id = rnd.Next(101, 213213123);
             _id = $"{id}";
             //Название банка
             bankn = bankn.Trim();
@@ -36,29 +36,40 @@ using System.Text;
         }
         public void Account_info()
         {
-            Console.WriteLine($"Имя: {_name} Фамилия: {_lastname} Название банка: {_bankname}");
+            Console.WriteLine("Текущая дата: " + DateTime.Now);
             Console.WriteLine($"ID сессии: {_id}");
+            Console.WriteLine($"Имя: {_name} Фамилия: {_lastname} Название банка: {_bankname}");
+            
         }
 
-    public void Account_payment(string a, int b)
-    {
-        Console.WriteLine(DateTime.Now);
-        if (a == "положить")
+        public double Account_payment(string a, int b, double _sum)
         {
-            if (b < 10000)
+            Console.WriteLine(DateTime.Now);
+            //положить минимум 10 000
+            if (a == "+")
             {
-                Console.WriteLine("Минимальное пополнение - 10000 рублей");
-            }
-        }
+                if (b < 10000)
+                {
+                    Console.WriteLine("Минимальное пополнение - 10000 рублей!");
 
-        if (a == "снять")
-        {
-            if (b < 200000)
-            {
-                Console.WriteLine("Минимальное снятие - 200000 рублей");
+                }
+                else _sum += b;
             }
-        }
+
+            //снять максимум 200 000
+            if (a == "-")
+            {
+                if (b < 200000)
+                {
+                    Console.WriteLine("Минимальное снятие - 200000 рублей!");
+                }
+                else _sum -= b;
+            }
+            Console.WriteLine($"money in  the account : {_sum}");
+            return _sum;
+            
     }
-        
-    }
+
+
+}
     

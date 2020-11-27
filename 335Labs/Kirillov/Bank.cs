@@ -8,6 +8,7 @@ namespace _335Labs.Kirillov
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("--Регистрация--");
             Console.WriteLine("Введите ваше имя: ");
             string newn = Console.ReadLine();
             Console.WriteLine("Введите вашу фамилию: ");
@@ -19,6 +20,15 @@ namespace _335Labs.Kirillov
             bankacc.Registration(newn, newsur, bankn);
             bankacc.Account_info();
 
+            Console.WriteLine("--Счет--");
+            double sum = 42000;
+            Console.WriteLine("Напишите '+' чтобы пополнить, '-' чтобы снять ");
+            string a = Console.ReadLine();
+            if (a == "+")
+            {
+                Console.WriteLine("Напишите '+' чтобы пополнить, '-' чтобы снять ");
+                int b = Console.ReadLine();
+            }
         }
     }
 }
