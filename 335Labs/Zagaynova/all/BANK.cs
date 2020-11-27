@@ -72,20 +72,28 @@ namespace _335Labs.Zagaynova
             private static double _Stavka = 0.067;
             private DateTime _accountOpenDate;
 
-        public  delegate void Interestaccrual(string mess);
+        public  delegate void  Interestaccrual(string mess);
         public event Interestaccrual PayAccChangeEvent;
+       
         public double  PaymentAccount
         {
             get
-            { return _paymentAccount; }
+            {return _paymentAccount; }
              private  set
             {_paymentAccount = value;
-                PayAccChangeEvent?.Invoke("Money in the account");
+              
+                PayAccChangeEvent?.Invoke("money in the acount ");
             }
         }
+        Interestaccrual Fort = (mess) =>
+        {
+            Console.WriteLine(  mess );
+        };
+        
+            
         public void RegistrAccount( double sum)
              {
-            PaymentAccount = sum;
+            _paymentAccount = sum;
             _accountOpenDate = DateTime.Now;
              }
             public double PaymentAc(int a, string s)
@@ -95,14 +103,14 @@ namespace _335Labs.Zagaynova
                 if (s == "Sum")
                 {
                     if (a < 10000) { Console.WriteLine("minimum amount 10 000"); }
-                    else PaymentAccount += a;
+                    else _paymentAccount += a;
                 }
                 else if (s == "Sub")
                 {
                     if (a > 200000) { Console.WriteLine("maximum amount 200 000"); }
-                    else PaymentAccount -= a;
+                    else _paymentAccount -= a;
                 }
-                  return PaymentAccount;
+                  return _paymentAccount;
             }
             public  void  ShowMoney()
             {
@@ -112,13 +120,14 @@ namespace _335Labs.Zagaynova
         public void Proc()
         {
 
-            for (int d = 2; d > 0;)
+            for (int d = 5; d > 0;)
             {
                 int ras = DateTime.Now.Second - _accountOpenDate.Second;
                 if (d == ras)
                 {
-                    PaymentAccount += PaymentAccount * _Stavka;
-                    d += 2;
+                    _paymentAccount += _paymentAccount * _Stavka;
+                    d += 5;
+                    Console.WriteLine(PaymentAccount);
                 }
             }
         }

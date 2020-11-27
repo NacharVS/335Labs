@@ -8,7 +8,7 @@ namespace _335Labs.Zagaynova
     public interface IObch
     {
         string Name { get; set; }
-        int Health { get; set; }
+        int Health { get;}
     }
     
     public interface Iformov
@@ -21,6 +21,7 @@ namespace _335Labs.Zagaynova
     }
     public interface Iforshoot
     {string Weapon  { get; set; }
+        int kol { get; set; }
     }
 
   
