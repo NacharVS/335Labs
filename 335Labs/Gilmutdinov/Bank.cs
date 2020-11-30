@@ -105,15 +105,7 @@ namespace _335Labs.Gilmutdinov
             }
             return _paymentAccount;
         }
-        public void PaymentAc()
-        {
-            Console.WriteLine("payment:  " + _paymentAccount);
-        }
-        public void InfoC()
-        {
-            string ii = "Money:   " + _paymentAccount;
-            Console.WriteLine(ii);
-        }
+        
         public double Rate()
         {
             _paymentAccount += _paymentAccount * _rate / 100;
@@ -124,23 +116,7 @@ namespace _335Labs.Gilmutdinov
             _rate = rerate;
         }
     }
-    class Employee : Person
-    {
-        private string _position;
-        public string position
-        {
-            get
-            { return _position; }
-            set
-            { _position = value; }
-        }
-        public void InfoE()
-        {
-            string I = "Position: " + _position;
-            Console.WriteLine(I);
-        }
-
-    }
+    
 
 }
 
