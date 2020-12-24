@@ -11,7 +11,7 @@ namespace _335Labs.Gilmutdinov.Game
         int _speed = 250;
         int _power = 70;
         string _weapon;
-        int mana = 200;
+        int _mana = 100;
 
 
         public string Name { get => _name; set => _name = value; }
@@ -19,5 +19,6 @@ namespace _335Labs.Gilmutdinov.Game
         public int Speed { get => _speed; }
         public int Power { get => _power; }
         public string Weapon { get => _weapon; set => _weapon = "blade"; }
+        public int Mana { get => _mana; }
     }
 }

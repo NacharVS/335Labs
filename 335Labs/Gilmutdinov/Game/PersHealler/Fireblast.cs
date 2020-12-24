@@ -10,15 +10,20 @@ namespace _335Labs.Gilmutdinov.Game.PersHealler
         {
             int mana = 200;
             
-                if (mana >= 20)
+                if (a == 1 & mana >= 20 )
                 {
                     mana = 200 - 20;
                 Console.WriteLine("Вы использовали способность Fireblast, потратили 20 маны");
+                }
+                if (a == 0 & mana >= 20)
+                {
+                    Console.WriteLine("Вы не использовали способность Fireblast");
                 }
                 else
                 {
                     Console.WriteLine("Не хватает маны");
                 }
+            
              
         }
     }

@@ -6,13 +6,21 @@ namespace _335Labs.Gilmutdinov.Game
 {
     class Gush
     {
-         public void FirstAbil (int a)
+         public void FirstAbil (int a, int Mana)
         {
-           
-            if (a == 1)
+            int mana = 100;
+            if (a == 1 & mana >= 15)
 	            {
                 Console.WriteLine("Вы использовали способность Gush");
 	            }
+            if (a == 0 & mana >= 15)
+            {
+                Console.WriteLine("Вы не использовали способность Gush");
+            }
+            else
+            {
+                Console.WriteLine("Не хватает маны");
+            }
         }
     }
 }
