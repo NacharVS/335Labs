@@ -6,17 +6,17 @@ namespace _335Labs.Gilmutdinov.Game.PersHealler
 {
     class ShallowGrave
     {
-        public void SecondAbil(int a, int Mana)
+        public void SecondAbil(bool a, int Mana)
         {
 
             int mana = 200;
 
-            if (a == 1 & mana >= 100)
+            if (a == true && mana >= 100)
             {
                 mana = 200 - 100;
                 Console.WriteLine("Вы использовали способность ShallowGrave, потратили 100 маны");
             }
-            if (a == 0 & mana >= 100)
+            else if (a == false && mana >= 100)
             {
                 Console.WriteLine("Вы не использовали способность ShallowGrave");
             }

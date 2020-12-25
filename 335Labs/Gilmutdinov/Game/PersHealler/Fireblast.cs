@@ -6,16 +6,16 @@ namespace _335Labs.Gilmutdinov.Game.PersHealler
 {
     class Fireblast
     {
-        public void ThirdAbil(int a, int Mana)
+        public void ThirdAbil(bool a, int Mana)
         {
             int mana = 200;
             
-                if (a == 1 & mana >= 20 )
+                if (a == true && mana >= 20 )
                 {
                     mana = 200 - 20;
                 Console.WriteLine("Вы использовали способность Fireblast, потратили 20 маны");
                 }
-                if (a == 0 & mana >= 20)
+                else if (a == false && mana >= 20)
                 {
                     Console.WriteLine("Вы не использовали способность Fireblast");
                 }

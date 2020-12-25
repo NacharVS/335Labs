@@ -6,15 +6,15 @@ namespace _335Labs.Gilmutdinov.Game.PersAttacker
 {
     class Omnislash
     {
-        public void SecondAbil(int a, int Mana)
+        public void SecondAbil(bool a, int Mana)
         {
             int mana = 100;
-            if (a == 1 & mana >= 35)
+            if (a == true && mana >= 35)
             {
                 mana = 100 - 35;
                 Console.WriteLine("Вы использовали способность Omnislash");
             }
-            if (a == 0 & mana >= 35)
+            else if (a == false && mana >= 35)
             {
                 Console.WriteLine("Вы не использовали способность Omnislash");
             }
